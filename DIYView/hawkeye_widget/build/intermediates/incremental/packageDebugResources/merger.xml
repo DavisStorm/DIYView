@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res"/><source path="E:\PROGRAME\DIYView\hawkeye_widget\build\generated\res\rs\debug"/><source path="E:\PROGRAME\DIYView\hawkeye_widget\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res"><file name="anim_list" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable\anim_list.xml" qualifiers="" type="drawable"/><file name="legend_circle_point_shape" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable\legend_circle_point_shape.xml" qualifiers="" type="drawable"/><file name="fighting" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\fighting.jpg" qualifiers="xhdpi-v4" type="drawable"/><file name="hb" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\hb.jpg" qualifiers="xhdpi-v4" type="drawable"/><file name="icon_half_cicle" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\icon_half_cicle.png" qualifiers="xhdpi-v4" type="drawable"/><file name="jingy" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\jingy.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_1" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_1.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_10" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_10.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_11" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_11.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_12" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_12.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_13" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_13.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_14" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_14.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_15" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_15.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_16" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_16.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_17" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_17.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_18" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_18.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_19" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_19.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_20" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_20.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_21" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_21.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_22" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_22.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_23" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_23.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_24" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_24.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_25" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_25.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_26" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_26.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_27" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_27.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_28" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_28.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_29" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_29.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_30" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_30.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_31" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_31.png" qualifiers="xhdpi-v4" type="drawable"/><file name="load_more_32" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\load_more_32.png" qualifiers="xhdpi-v4" type="drawable"/><file name="widget_icon_buy" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\widget_icon_buy.png" qualifiers="xhdpi-v4" type="drawable"/><file name="widget_icon_group" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\widget_icon_group.png" qualifiers="xhdpi-v4" type="drawable"/><file name="widget_icon_person" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\drawable-xhdpi\widget_icon_person.png" qualifiers="xhdpi-v4" type="drawable"/><file name="legend_circleview_layout" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\layout\legend_circleview_layout.xml" qualifiers="" type="layout"/><file name="legend_ringview_itemview" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\layout\legend_ringview_itemview.xml" qualifiers="" type="layout"/><file name="legend_ringview_layout" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\layout\legend_ringview_layout.xml" qualifiers="" type="layout"/><file name="pullrefesh_layout" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\layout\pullrefesh_layout.xml" qualifiers="" type="layout"/><file name="ringview_center_imgtxt_view" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\layout\ringview_center_imgtxt_view.xml" qualifiers="" type="layout"/><file name="taperchart_layout" path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\layout\taperchart_layout.xml" qualifiers="" type="layout"/><file path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\values\attrs.xml" qualifiers=""><declare-styleable name="RingView">
+        
+        <attr format="enum" name="rv_mode">
+            
+            <enum name="circle" value="0"/>
+            
+            <enum name="more" value="1"/>
+            
+            <enum name="group" value="2"/>
+        </attr>
+        
+        <attr format="enum" name="rv_center_style">
+            
+            <enum name="icon" value="0"/>
+            
+            <enum name="txt" value="1"/>
+            
+            <enum name="double_txt" value="2"/>
+            
+            <enum name="all" value="3"/>
+        </attr>
+        
+        <attr format="reference" name="rv_center_bmp"/>
+        
+        <attr format="string" name="rv_center_txt"/>
+        
+        <attr format="dimension" name="rv_center_txt_size"/>
+        
+        <attr format="color" name="rv_center_txt_color"/>
+        
+        <attr format="dimension" name="rv_center_imgtxt_margin"/>
+        
+        <attr format="reference|color" name="rv_textColor"/>
+        
+        <attr format="dimension" name="rv_textSize"/>
+        
+        <attr format="dimension" name="rv_textMargin"/>
+        
+        <attr format="reference|color" name="rv_reachedColor"/>
+        
+        <attr format="dimension" name="rv_reachedHeight"/>
+        
+        <attr format="reference|color" name="rv_unReachedColor"/>
+        
+        <attr format="dimension" name="rv_unReachedHeight"/>
+        
+        <attr format="dimension" name="rv_radius"/>
+        
+        <attr format="boolean" name="rv_outer_enable"/>
+        
+        <attr format="boolean" name="rv_need_cut"/>
+    </declare-styleable><declare-styleable name="CircleView">
+        
+        <attr format="enum" name="cv_center_style">
+            
+            <enum name="icon" value="0"/>
+            
+            <enum name="txt" value="1"/>
+            
+            <enum name="double_txt" value="2"/>
+            
+            <enum name="all" value="3"/>
+        </attr>
+        
+        <attr format="reference" name="cv_center_bmp"/>
+        
+        <attr format="string" name="cv_center_txt"/>
+        
+        <attr format="dimension" name="cv_center_txt_size"/>
+        
+        <attr format="color" name="cv_center_txt_color"/>
+        
+        <attr format="dimension" name="cv_cengter_txt_margin"/>
+        
+        <attr format="dimension" name="cv_boderW"/>
+        
+        <attr format="dimension" name="cv_radius"/>
+    </declare-styleable><declare-styleable name="LegendView">
+        
+        <attr format="dimension" name="lv_legend_columnW"/>
+        
+        <attr format="dimension" name="lv_legend_vertical_margin"/>
+        
+        <attr format="dimension" name="lv_legend_circle_margin"/>
+        
+        <attr format="dimension" name="lv_legend_font_size"/>
+        
+        <attr format="color" name="lv_legend_font_color"/>
+        
+        <attr format="dimension" name="lv_legend_labelAndPoint_margin"/>
+        
+        <attr format="dimension" name="lv_legend_offset_left"/>
+        
+        <attr format="enum" name="lv_legend_style">
+            
+            <enum name="circle" value="0"/>
+            
+            <enum name="square" value="1"/>
+            
+            <enum name="line" value="2"/>
+        </attr>
+    </declare-styleable><declare-styleable name="LegendRingView">
+        
+        <attr format="enum" name="lrv_circle_center_style">
+            
+            <enum name="icon" value="0"/>
+            
+            <enum name="txt" value="1"/>
+            
+            <enum name="double_txt" value="2"/>
+            
+            <enum name="all" value="3"/>
+        </attr>
+        
+        <attr format="dimension" name="lrv_circle_height"/>
+        
+        <attr format="dimension" name="lrv_circle_boderW"/>
+        
+        <attr format="dimension" name="lrv_circle_paddingTop"/>
+        
+        <attr format="dimension" name="lrv_circle_paddingBottom"/>
+        
+        <attr format="string" name="lrv_circle_center_txt"/>
+        
+        <attr format="dimension" name="lrv_circle_center_txt_size"/>
+        
+        <attr format="color" name="lrv_circle_center_txt_color"/>
+        
+        <attr format="dimension" name="lrv_legend_columnW"/>
+        
+        <attr format="dimension" name="lrv_legend_vertical_margin"/>
+        
+        <attr format="dimension" name="lrv_legend_circle_margin"/>
+        
+        <attr format="dimension" name="lrv_legend_font_size"/>
+        
+        <attr format="color" name="lrv_legend_font_color"/>
+        
+        <attr format="dimension" name="lrv_legend_labelAndPoint_margin"/>
+        
+        <attr format="dimension" name="lrv_offset_left"/>
+        
+        <attr format="enum" name="lrv_legend_style">
+            
+            <enum name="circle" value="0"/>
+            
+            <enum name="square" value="1"/>
+            
+            <enum name="line" value="2"/>
+        </attr>
+    </declare-styleable><declare-styleable name="SectionProBar">
+        
+        <attr format="reference|color" name="hbv_reachedColor"/>
+        
+        <attr format="dimension" name="hbv_reachedHeight"/>
+        
+        <attr format="reference|color" name="hbv_unReachedColor"/>
+        
+        <attr format="dimension" name="hbv_unReachedHeight"/>
+    </declare-styleable><declare-styleable name="TaperChart">
+        
+        <attr format="enum" name="tc_mode">
+            
+            <enum name="first" value="0"/>
+            
+            <enum name="second" value="1"/>
+            
+            <enum name="third" value="2"/>
+            
+            <enum name="fourth" value="3"/>
+            
+            <enum name="fifth" value="4"/>
+        </attr>
+        
+        <attr format="boolean" name="tc_yaxis_percent"/>
+        
+        <attr format="dimension" name="tc_axis_txtsize"/>
+        
+        <attr format="dimension" name="tc_inner_space"/>
+        
+        <attr format="dimension" name="tc_quad_x_offset"/>
+        
+        <attr format="boolean" name="is_draw_topvalue"/>
+    </declare-styleable><declare-styleable name="HorTaperChart">
+        
+        <attr format="boolean" name="htc_yaxis_percent"/>
+        
+        <attr format="dimension" name="htc_axis_txtsize"/>
+        
+        <attr format="dimension" name="htc_inner_space"/>
+        
+        <attr format="dimension" name="htc_quad_x_offset"/>
+        
+        <attr format="boolean" name="htc_is_draw_topValue"/>
+    </declare-styleable><declare-styleable name="GradientLine">
+        
+        <attr format="enum" name="gl_mode">
+            <enum name="flat" value="0"/>
+            <enum name="up" value="1"/>
+            <enum name="down" value="2"/>
+        </attr>
+        
+        <attr format="dimension" name="gl_line_width"/>
+    </declare-styleable><declare-styleable name="CircleProgressBarView">
+
+        <attr format="dimension" name="circleBgStrokeWidth"/>
+        <attr format="dimension" name="progressStrokeWidth"/>
+
+        <attr format="color" name="circleBgColor"/>
+        <attr format="color" name="progressColor"/>
+
+        <attr format="integer" name="circleAnimationDuration"/>
+
+        <attr format="boolean" name="isDrawCenterProgressText"/>
+
+        <attr format="color" name="centerProgressTextColor"/>
+        <attr format="dimension" name="centerProgressTextSize"/>
+        <attr format="color" name="targetNumColor"/>
+        <attr format="dimension" name="targetNumSize"/>
+        <attr format="color" name="targetTextColor"/>
+        <attr format="integer" name="targetTextSize"/>
+        <attr format="integer" name="lineWidthcircle"/>
+        <attr format="color" name="lineColor"/>
+        <attr format="string" name="target_text"/>
+
+        <attr format="color" name="round_color"/>
+        <attr format="color" name="round_progress_color"/>
+        <attr format="dimension" name="round_width"/>
+        <attr format="integer" name="max_"/>
+        <attr format="boolean" name="text_isDisplayable"/>
+        <attr name="style_">
+            <enum name="STROKE" value="0"/>
+            <enum name="FILL" value="1"/>
+        </attr>
+
+    </declare-styleable><declare-styleable name="ShadowProBar">
+        <attr format="color|reference" name="progress_color"/>
+    </declare-styleable><declare-styleable name="HalfCircleProView">
+        <attr format="dimension" name="strokeWidth"/>
+        <attr format="color" name="txtColor"/>
+        <attr format="dimension" name="txtSize"/>
+    </declare-styleable><declare-styleable name="HorProBar">
+        <attr format="color|reference" name="pro_color"/>
+        <attr format="dimension" name="pro_width"/>
+        <attr format="dimension" name="pro_height"/>
+    </declare-styleable><declare-styleable name="CircleProgress">
+        
+        <attr format="boolean" name="antiAlias"/>
+        
+        <attr format="float" name="startAngle"/>
+        
+        <attr format="float" name="sweepAngle"/>
+        
+        <attr format="integer" name="animTime"/>
+        
+        <attr format="float" name="circlemaxValue"/>
+        <attr format="float" name="value"/>
+        
+        <attr format="string|reference" name="unit"/>
+        <attr format="dimension" name="unitSize"/>
+        <attr format="color|reference" name="unitColor"/>
+        
+        <attr format="string|reference" name="hint"/>
+        <attr format="dimension" name="hintSize"/>
+        <attr format="color|reference" name="hintColor"/>
+        
+        <attr format="integer" name="precision"/>
+        <attr format="dimension" name="valueSize"/>
+        <attr format="color|reference" name="valueColor"/>
+        
+        <attr format="color|reference" name="bgArcColor"/>
+        
+        <attr format="dimension" name="arcWidth"/>
+        
+        <attr format="color|reference" name="arcColors"/>
+        
+        <attr format="float" name="textOffsetPercentInRadius"/>
+        
+        <attr format="dimension" name="bgArcWidth"/>
+        
+        <attr format="integer" name="dottedLineCount"/>
+        
+        <attr format="integer" name="lineDistance"/>
+        
+        <attr format="dimension" name="dottedLineWidth"/>
+        
+        <attr format="color" name="foreStartColor"/>
+        
+        <attr format="color" name="foreEndColor"/>
+    </declare-styleable><declare-styleable name="HorScrollSelectedView">
+        
+        <attr format="integer" name="seeSize"/>
+        
+        <attr format="float" name="selectedTextSize"/>
+        <attr format="color" name="selectedTextColor"/>
+        
+        <attr format="float" name="hortextSize"/>
+        <attr format="color|reference" name="textColor"/>
+    </declare-styleable><declare-styleable name="TimeRulerView">
+        <attr format="dimension|reference" name="textFontSize"/>
+        <attr name="totalTimePerCell">
+            <enum name="hour" value="24"/>
+            <enum name="halfHour" value="48"/>
+            <enum name="fifteenmin" value="96"/>
+            <enum name="fivemin" value="288"/>
+        </attr>
+        <attr format="color|reference" name="textColors"/>
+        <attr format="color|reference" name="scaleColor"/>
+        <attr format="color|reference" name="topLineColor"/>
+        <attr format="color|reference" name="bottomLineColor"/>
+        <attr format="color|reference" name="middleLineColor"/>
+        <attr format="color|reference" name="selectBackgroundColor"/>
+        <attr format="dimension|reference" name="topLineStrokeWidth"/>
+        <attr format="dimension|reference" name="bottomLineStrokeWidth"/>
+        <attr format="dimension|reference" name="middleLineStrokeWidth"/>
+        <attr format="dimension|reference" name="scaleLineStrokeWidth"/>
+        <attr format="dimension|reference" name="widthPerScale"/>
+        <attr format="dimension|reference" name="showtimeHeight"/>
+        <attr format="dimension|reference" name="contentHeight"/>
+    </declare-styleable><declare-styleable name="SectionProBarMine">
+        
+        <attr format="reference|color" name="hbv_reachedColorMine"/>
+        
+        <attr format="dimension" name="hbv_reachedHeightMine"/>
+        
+        <attr format="reference|color" name="hbv_unReachedColorMine"/>
+        
+        <attr format="dimension" name="hbv_unReachedHeightMine"/>
+        <attr format="enum" name="hbv_style">
+            <enum name="NORMAL" value="0"/>
+            <enum name="GRADIENT" value="1"/>
+        </attr>
+    </declare-styleable><declare-styleable name="RingViewMine">
+
+        <attr format="string" name="center_text"/>
+
+        <attr format="reference" name="center_bmp"/>
+
+        <attr format="dimension" name="ringRadius"/>
+
+        <attr format="dimension" name="ringWidth"/>
+        
+        <attr format="dimension" name="biaoxianlength"/>
+
+        <attr format="dimension" name="name_textsize"/>
+    </declare-styleable><declare-styleable name="GradientLineMine">
+        <attr format="integer" name="duration_mine"/>
+    </declare-styleable><declare-styleable name="GradientTextView">
+        <attr format="color" name="originColor"/>
+        <attr format="color" name="changeColor"/>
+    </declare-styleable></file><file path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\values\colors.xml" qualifiers=""><color name="txt_black">#2A2A2A</color><color name="ruler_line_color">#9E9E9E</color><color name="ruler_text_color">#909090</color><color name="ruler_indicator_color">#E64D14</color><color name="timeruler_showtime_bg_color">#000000</color><color name="timeruler_showtime_text_color">#E6FFFFFF</color></file><file path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\values\dimens.xml" qualifiers=""><dimen name="taper_chart_margin">12dp</dimen><dimen name="taper_chart_height">240dp</dimen><dimen name="taper_text_size">10sp</dimen><dimen name="timerulerview_height">60dp</dimen><dimen name="timerulerview_showtimewidth">48dp</dimen><dimen name="timerulerview_showtimeheight">28dp</dimen><dimen name="timerulerview_showtime_marginbottom">1dp</dimen><dimen name="timerulerview_showtime_corner">2dp</dimen><dimen name="timerulerview_showtime_textsize">14sp</dimen><dimen name="timerulerview_contentheight">36dp</dimen><dimen name="timerulerview_arrowheight">6dp</dimen><dimen name="timerulerview_arrowheight_margin">1dp</dimen><dimen name="timerulerview_scaleheight">5dp</dimen><dimen name="page_font_size">12sp</dimen></file><file path="E:\PROGRAME\DIYView\hawkeye_widget\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">CustomView</string><string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string><string name="title_animator_bmp_overturn">图片翻转动画</string><string name="title_section_probar">SectionProBar</string></file></source><source path="E:\PROGRAME\DIYView\hawkeye_widget\build\generated\res\rs\debug"/><source path="E:\PROGRAME\DIYView\hawkeye_widget\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="E:\PROGRAME\DIYView\hawkeye_widget\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="E:\PROGRAME\DIYView\hawkeye_widget\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="RingViewMine">
+
+        <attr format="string" name="center_text"/>
+
+        <attr format="reference" name="center_bmp"/>
+
+        <attr format="dimension" name="ringRadius"/>
+
+        <attr format="dimension" name="ringWidth"/>
+        
+        <attr format="dimension" name="biaoxianlength"/>
+
+        <attr format="dimension" name="name_textsize"/>
+    </declare-styleable><declare-styleable name="RingView">
+        
+        <attr format="enum" name="rv_mode">
+            
+            <enum name="circle" value="0"/>
+            
+            <enum name="more" value="1"/>
+            
+            <enum name="group" value="2"/>
+        </attr>
+        
+        <attr format="enum" name="rv_center_style">
+            
+            <enum name="icon" value="0"/>
+            
+            <enum name="txt" value="1"/>
+            
+            <enum name="double_txt" value="2"/>
+            
+            <enum name="all" value="3"/>
+        </attr>
+        
+        <attr format="reference" name="rv_center_bmp"/>
+        
+        <attr format="string" name="rv_center_txt"/>
+        
+        <attr format="dimension" name="rv_center_txt_size"/>
+        
+        <attr format="color" name="rv_center_txt_color"/>
+        
+        <attr format="dimension" name="rv_center_imgtxt_margin"/>
+        
+        <attr format="reference|color" name="rv_textColor"/>
+        
+        <attr format="dimension" name="rv_textSize"/>
+        
+        <attr format="dimension" name="rv_textMargin"/>
+        
+        <attr format="reference|color" name="rv_reachedColor"/>
+        
+        <attr format="dimension" name="rv_reachedHeight"/>
+        
+        <attr format="reference|color" name="rv_unReachedColor"/>
+        
+        <attr format="dimension" name="rv_unReachedHeight"/>
+        
+        <attr format="dimension" name="rv_radius"/>
+        
+        <attr format="boolean" name="rv_outer_enable"/>
+        
+        <attr format="boolean" name="rv_need_cut"/>
+    </declare-styleable><declare-styleable name="SectionProBar">
+        
+        <attr format="reference|color" name="hbv_reachedColor"/>
+        
+        <attr format="dimension" name="hbv_reachedHeight"/>
+        
+        <attr format="reference|color" name="hbv_unReachedColor"/>
+        
+        <attr format="dimension" name="hbv_unReachedHeight"/>
+    </declare-styleable><declare-styleable name="SectionProBarMine">
+        
+        <attr format="reference|color" name="hbv_reachedColorMine"/>
+        
+        <attr format="dimension" name="hbv_reachedHeightMine"/>
+        
+        <attr format="reference|color" name="hbv_unReachedColorMine"/>
+        
+        <attr format="dimension" name="hbv_unReachedHeightMine"/>
+        <attr format="enum" name="hbv_style">
+            <enum name="NORMAL" value="0"/>
+            <enum name="GRADIENT" value="1"/>
+        </attr>
+    </declare-styleable><declare-styleable name="TaperChart">
+        
+        <attr format="enum" name="tc_mode">
+            
+            <enum name="first" value="0"/>
+            
+            <enum name="second" value="1"/>
+            
+            <enum name="third" value="2"/>
+            
+            <enum name="fourth" value="3"/>
+            
+            <enum name="fifth" value="4"/>
+        </attr>
+        
+        <attr format="boolean" name="tc_yaxis_percent"/>
+        
+        <attr format="dimension" name="tc_axis_txtsize"/>
+        
+        <attr format="dimension" name="tc_inner_space"/>
+        
+        <attr format="dimension" name="tc_quad_x_offset"/>
+        
+        <attr format="boolean" name="is_draw_topvalue"/>
+    </declare-styleable><declare-styleable name="LegendView">
+        
+        <attr format="dimension" name="lv_legend_columnW"/>
+        
+        <attr format="dimension" name="lv_legend_vertical_margin"/>
+        
+        <attr format="dimension" name="lv_legend_circle_margin"/>
+        
+        <attr format="dimension" name="lv_legend_font_size"/>
+        
+        <attr format="color" name="lv_legend_font_color"/>
+        
+        <attr format="dimension" name="lv_legend_labelAndPoint_margin"/>
+        
+        <attr format="dimension" name="lv_legend_offset_left"/>
+        
+        <attr format="enum" name="lv_legend_style">
+            
+            <enum name="circle" value="0"/>
+            
+            <enum name="square" value="1"/>
+            
+            <enum name="line" value="2"/>
+        </attr>
+    </declare-styleable><declare-styleable name="CircleView">
+        
+        <attr format="enum" name="cv_center_style">
+            
+            <enum name="icon" value="0"/>
+            
+            <enum name="txt" value="1"/>
+            
+            <enum name="double_txt" value="2"/>
+            
+            <enum name="all" value="3"/>
+        </attr>
+        
+        <attr format="reference" name="cv_center_bmp"/>
+        
+        <attr format="string" name="cv_center_txt"/>
+        
+        <attr format="dimension" name="cv_center_txt_size"/>
+        
+        <attr format="color" name="cv_center_txt_color"/>
+        
+        <attr format="dimension" name="cv_cengter_txt_margin"/>
+        
+        <attr format="dimension" name="cv_boderW"/>
+        
+        <attr format="dimension" name="cv_radius"/>
+    </declare-styleable><declare-styleable name="GradientLineMine">
+        <attr format="integer" name="duration_mine"/>
+    </declare-styleable><declare-styleable name="HorScrollSelectedView">
+        
+        <attr format="integer" name="seeSize"/>
+        
+        <attr format="float" name="selectedTextSize"/>
+        <attr format="color" name="selectedTextColor"/>
+        
+        <attr format="float" name="hortextSize"/>
+        <attr format="color|reference" name="textColor"/>
+    </declare-styleable><declare-styleable name="ShadowProBar">
+        <attr format="color|reference" name="progress_color"/>
+    </declare-styleable><declare-styleable name="GradientTextView">
+        <attr format="color" name="originColor"/>
+        <attr format="color" name="changeColor"/>
+    </declare-styleable><declare-styleable name="HorProBar">
+        <attr format="color|reference" name="pro_color"/>
+        <attr format="dimension" name="pro_width"/>
+        <attr format="dimension" name="pro_height"/>
+    </declare-styleable><declare-styleable name="CircleProgressBarView">
+
+        <attr format="dimension" name="circleBgStrokeWidth"/>
+        <attr format="dimension" name="progressStrokeWidth"/>
+
+        <attr format="color" name="circleBgColor"/>
+        <attr format="color" name="progressColor"/>
+
+        <attr format="integer" name="circleAnimationDuration"/>
+
+        <attr format="boolean" name="isDrawCenterProgressText"/>
+
+        <attr format="color" name="centerProgressTextColor"/>
+        <attr format="dimension" name="centerProgressTextSize"/>
+        <attr format="color" name="targetNumColor"/>
+        <attr format="dimension" name="targetNumSize"/>
+        <attr format="color" name="targetTextColor"/>
+        <attr format="integer" name="targetTextSize"/>
+        <attr format="integer" name="lineWidthcircle"/>
+        <attr format="color" name="lineColor"/>
+        <attr format="string" name="target_text"/>
+
+        <attr format="color" name="round_color"/>
+        <attr format="color" name="round_progress_color"/>
+        <attr format="dimension" name="round_width"/>
+        <attr format="integer" name="max_"/>
+        <attr format="boolean" name="text_isDisplayable"/>
+        <attr name="style_">
+            <enum name="STROKE" value="0"/>
+            <enum name="FILL" value="1"/>
+        </attr>
+
+    </declare-styleable><declare-styleable name="HorTaperChart">
+        
+        <attr format="boolean" name="htc_yaxis_percent"/>
+        
+        <attr format="dimension" name="htc_axis_txtsize"/>
+        
+        <attr format="dimension" name="htc_inner_space"/>
+        
+        <attr format="dimension" name="htc_quad_x_offset"/>
+        
+        <attr format="boolean" name="htc_is_draw_topValue"/>
+    </declare-styleable><declare-styleable name="HalfCircleProView">
+        <attr format="dimension" name="strokeWidth"/>
+        <attr format="color" name="txtColor"/>
+        <attr format="dimension" name="txtSize"/>
+    </declare-styleable><declare-styleable name="GradientLine">
+        
+        <attr format="enum" name="gl_mode">
+            <enum name="flat" value="0"/>
+            <enum name="up" value="1"/>
+            <enum name="down" value="2"/>
+        </attr>
+        
+        <attr format="dimension" name="gl_line_width"/>
+    </declare-styleable><declare-styleable name="CircleProgress">
+        
+        <attr format="boolean" name="antiAlias"/>
+        
+        <attr format="float" name="startAngle"/>
+        
+        <attr format="float" name="sweepAngle"/>
+        
+        <attr format="integer" name="animTime"/>
+        
+        <attr format="float" name="circlemaxValue"/>
+        <attr format="float" name="value"/>
+        
+        <attr format="string|reference" name="unit"/>
+        <attr format="dimension" name="unitSize"/>
+        <attr format="color|reference" name="unitColor"/>
+        
+        <attr format="string|reference" name="hint"/>
+        <attr format="dimension" name="hintSize"/>
+        <attr format="color|reference" name="hintColor"/>
+        
+        <attr format="integer" name="precision"/>
+        <attr format="dimension" name="valueSize"/>
+        <attr format="color|reference" name="valueColor"/>
+        
+        <attr format="color|reference" name="bgArcColor"/>
+        
+        <attr format="dimension" name="arcWidth"/>
+        
+        <attr format="color|reference" name="arcColors"/>
+        
+        <attr format="float" name="textOffsetPercentInRadius"/>
+        
+        <attr format="dimension" name="bgArcWidth"/>
+        
+        <attr format="integer" name="dottedLineCount"/>
+        
+        <attr format="integer" name="lineDistance"/>
+        
+        <attr format="dimension" name="dottedLineWidth"/>
+        
+        <attr format="color" name="foreStartColor"/>
+        
+        <attr format="color" name="foreEndColor"/>
+    </declare-styleable><declare-styleable name="TimeRulerView">
+        <attr format="dimension|reference" name="textFontSize"/>
+        <attr name="totalTimePerCell">
+            <enum name="hour" value="24"/>
+            <enum name="halfHour" value="48"/>
+            <enum name="fifteenmin" value="96"/>
+            <enum name="fivemin" value="288"/>
+        </attr>
+        <attr format="color|reference" name="textColors"/>
+        <attr format="color|reference" name="scaleColor"/>
+        <attr format="color|reference" name="topLineColor"/>
+        <attr format="color|reference" name="bottomLineColor"/>
+        <attr format="color|reference" name="middleLineColor"/>
+        <attr format="color|reference" name="selectBackgroundColor"/>
+        <attr format="dimension|reference" name="topLineStrokeWidth"/>
+        <attr format="dimension|reference" name="bottomLineStrokeWidth"/>
+        <attr format="dimension|reference" name="middleLineStrokeWidth"/>
+        <attr format="dimension|reference" name="scaleLineStrokeWidth"/>
+        <attr format="dimension|reference" name="widthPerScale"/>
+        <attr format="dimension|reference" name="showtimeHeight"/>
+        <attr format="dimension|reference" name="contentHeight"/>
+    </declare-styleable><declare-styleable name="LegendRingView">
+        
+        <attr format="enum" name="lrv_circle_center_style">
+            
+            <enum name="icon" value="0"/>
+            
+            <enum name="txt" value="1"/>
+            
+            <enum name="double_txt" value="2"/>
+            
+            <enum name="all" value="3"/>
+        </attr>
+        
+        <attr format="dimension" name="lrv_circle_height"/>
+        
+        <attr format="dimension" name="lrv_circle_boderW"/>
+        
+        <attr format="dimension" name="lrv_circle_paddingTop"/>
+        
+        <attr format="dimension" name="lrv_circle_paddingBottom"/>
+        
+        <attr format="string" name="lrv_circle_center_txt"/>
+        
+        <attr format="dimension" name="lrv_circle_center_txt_size"/>
+        
+        <attr format="color" name="lrv_circle_center_txt_color"/>
+        
+        <attr format="dimension" name="lrv_legend_columnW"/>
+        
+        <attr format="dimension" name="lrv_legend_vertical_margin"/>
+        
+        <attr format="dimension" name="lrv_legend_circle_margin"/>
+        
+        <attr format="dimension" name="lrv_legend_font_size"/>
+        
+        <attr format="color" name="lrv_legend_font_color"/>
+        
+        <attr format="dimension" name="lrv_legend_labelAndPoint_margin"/>
+        
+        <attr format="dimension" name="lrv_offset_left"/>
+        
+        <attr format="enum" name="lrv_legend_style">
+            
+            <enum name="circle" value="0"/>
+            
+            <enum name="square" value="1"/>
+            
+            <enum name="line" value="2"/>
+        </attr>
+    </declare-styleable></configuration></mergedItems></merger>
