@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.diyview">
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.UniverseStarsViewActivity" />
+        <activity android:name=".activity.ViewPagerActivity" />
+        <activity android:name=".activity.CircleDotProgressBarActivity" />
+        <activity android:name=".activity.DragImageViewActivity" />
+        <activity android:name=".activity.StatisticsViewActivity" />
+        <activity android:name=".activity.MeasureViewActivity" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.DragFooterViewActivity" />
+        <activity android:name=".activity.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.LightingActivity" />
+        <activity android:name=".activity.ScrollVActivity" />
+        <activity android:name=".activity.SmoothPagingViewActivity" />
+        <activity android:name=".activity.LoadingViewActivity" />
+        <activity android:name=".activity.ImageWatcherActivity" />
+        <activity android:name=".activity.VectorExampleActivity" />
+        <activity android:name=".activity.SuperLikeActivity" />
+        <activity android:name=".activity.WLikeAnimActivity" />
+        <activity android:name=".activity.PractisePointActivity" />
+        <activity android:name=".activity.CanvasDemoActivity" />
+        <activity android:name=".activity.MatrixDemoActivity" />
+        <activity android:name=".activity.WidgetCasesActivity" />
+        <activity android:name=".activity.SectionProBarActivity" />
+        <activity android:name=".activity.WithBackPressBaseActivity" />
+        <activity android:name=".activity.RingViewActivity" />
+        <activity android:name=".activity.SectionProMineBarActivity" />
+        <activity android:name=".activity.ImgTxtMixtureActivity" />
+        <activity android:name=".activity.TaperChartActivity" />
+        <activity android:name=".activity.ScrollTaperChartActivity" />
+        <activity android:name=".activity.GradientLineActivity" />
+        <activity android:name=".activity.GradientTextViewActivity" />
+        <activity android:name=".activity.AnimShopButtonActivity" />
+    </application>
+
+</manifest>

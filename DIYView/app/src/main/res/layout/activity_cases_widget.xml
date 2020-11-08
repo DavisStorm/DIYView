@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".activity.MenuMainActivity"
+        tools:showIn="@layout/app_bar_menu_main">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="74dp"
+            android:gravity="center"
+            android:text="功能分布如下"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            app:alignContent="stretch"
+            app:alignItems="stretch"
+            app:flexDirection="row"
+            app:flexWrap="wrap"
+            app:layout_constraintTop_toBottomOf="@id/titleTv">
+
+            <TextView
+                android:id="@+id/selPtoBarTv"
+                style="@style/TextViewStyle"
+                android:text="SectionProBar" />
+
+            <TextView
+                android:id="@+id/imgTxtTv"
+                style="@style/TextViewStyle"
+                android:text="图文混排" />
+
+            <TextView
+                android:id="@+id/ringvTv"
+                style="@style/TextViewStyle"
+                android:text="RingView" />
+
+            <TextView
+                android:id="@+id/tcTv"
+                style="@style/TextViewStyle"
+                android:text="TaperChart" />
+
+            <TextView
+                android:id="@+id/htcTv"
+                style="@style/TextViewStyle"
+                android:text="HorTaperChart" />
+
+            <TextView
+                android:id="@+id/gradientTv"
+                style="@style/TextViewStyle"
+                android:text="GradientLine" />
+
+            <TextView
+                android:id="@+id/lrvTv"
+                style="@style/TextViewStyle"
+                android:text="LegendRingView" />
+
+            <TextView
+                android:id="@+id/cpbvTv"
+                style="@style/TextViewStyle"
+                android:text="CircleProgressBarView" />
+
+            <TextView
+                android:id="@+id/spbTv"
+                style="@style/TextViewStyle"
+                android:text="ShadowProBar" />
+
+            <TextView
+                android:id="@+id/hcpvTv"
+                style="@style/TextViewStyle"
+                android:text="HalfCircleProView" />
+
+            <TextView
+                android:id="@+id/matrixTv"
+                style="@style/TextViewStyle"
+                android:text="MatrixView" />
+
+            <TextView
+                android:id="@+id/gpbTv"
+                style="@style/TextViewStyle"
+                android:text="GradientProBar" />
+
+            <TextView
+                android:id="@+id/hssvTv"
+                style="@style/TextViewStyle"
+                android:text="HorScrollSelectedView" />
+
+            <TextView
+                android:id="@+id/horTv"
+                style="@style/TextViewStyle"
+                android:text="HorProBar" />
+
+            <TextView
+                android:id="@+id/waveTv"
+                style="@style/TextViewStyle"
+                android:text="WaveView" />
+
+            <TextView
+                android:id="@+id/colorMainTv"
+                style="@style/TextViewStyle"
+                android:text="图片滤镜" />
+
+            <TextView
+                android:id="@+id/refreshTv"
+                style="@style/TextViewStyle"
+                android:text="RefreshView" />
+
+            <TextView
+                android:id="@+id/timeRulerTv"
+                style="@style/TextViewStyle"
+                android:text="TimeRulerView" />
+
+            <TextView
+                android:id="@+id/circleBtnTv"
+                style="@style/TextViewStyle"
+                android:text="CircleButton" />
+
+            <TextView
+                android:id="@+id/ctmSvTv"
+                style="@style/TextViewStyle"
+                android:text="CustomScrollView" />
+
+            <TextView
+                android:id="@+id/vpTransTv"
+                style="@style/TextViewStyle"
+                android:text="ViewPagerTransformer" />
+
+            <TextView
+                android:id="@+id/imgOverturnTv"
+                style="@style/TextViewStyle"
+                android:text="@string/title_animator_bmp_overturn" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

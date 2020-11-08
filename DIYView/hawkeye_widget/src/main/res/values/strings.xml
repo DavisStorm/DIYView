@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CustomView</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="title_animator_bmp_overturn">图片翻转动画</string>
+    <string name="title_section_probar">SectionProBar</string>
+</resources>
