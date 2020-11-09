@@ -390,20 +390,6 @@
         <attr name="originColor" format="color"/>
         <attr name="changeColor" format="color"/>
     </declare-styleable>
-    <declare-styleable name="AnimShopButtonMine">
-        <attr name="carColor" format="color"/>
-        <attr name="carTextColor" format="color"/>
-        <attr name="carText" format="string"/>
-        <attr name="carTextSize" format="dimension"/>
-        <attr name="carRadius" format="dimension"/>
-        <attr name="leftBtnCircleColor" format="color"/>
-        <attr name="rightBtnCircleCorlo" format="color"/>
-        <attr name="rightBtnPlusColor" format="color"/>
-        <attr name="btnStrokeWidth" format="dimension"/>
-        <attr name="numTextSize" format="dimension"/>
-        <attr name="numTextColor" format="color"/>
-        <attr name="numMax" format="integer"/>
-    </declare-styleable>
 
     <declare-styleable name="StatisticsView">
         <attr name="maxValue" format="integer"/>
@@ -527,5 +513,20 @@
         <attr name="like" format="boolean"/>
         <attr name="starRotateDegree" format="integer"/>
         <attr name="smallStarRotateDegree" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="AnimShopButtonMine">
+        <attr name="carColor" format="color"/>
+        <attr name="carTextColor" format="color"/>
+        <attr name="carText" format="string"/>
+        <attr name="carTextSize" format="dimension"/>
+        <attr name="carRadius" format="dimension"/>
+        <attr name="leftBtnCircleColor" format="color"/>
+        <attr name="rightBtnCircleCorlo" format="color"/>
+        <attr name="rightBtnPlusColor" format="color"/>
+        <attr name="btnStrokeWidth" format="dimension"/>
+        <attr name="numTextSize" format="dimension"/>
+        <attr name="numTextColor" format="color"/>
+        <attr name="numMax" format="integer"/>
+        <attr name="carshowDuration" format="integer"/>
     </declare-styleable>
 </resources>

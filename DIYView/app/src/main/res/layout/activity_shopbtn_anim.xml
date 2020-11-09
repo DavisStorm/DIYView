@@ -32,6 +32,12 @@
         android:id="@+id/mine_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
         app:carColor="@color/orangee"
         app:carRadius="45dp"
         app:carText="添加购物车"
@@ -44,6 +50,7 @@
         app:numTextSize="15sp"
         app:numTextColor="@color/blue"
         app:numMax="4"
+        app:carshowDuration="2000"
         />
 
 </LinearLayout>

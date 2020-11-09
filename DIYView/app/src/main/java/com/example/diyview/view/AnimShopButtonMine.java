@@ -1,5 +1,6 @@
 package com.example.diyview.view;
 
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -7,8 +8,10 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.LinearInterpolator;
 import android.widget.Toast;
 
 import com.example.diyview.R;
@@ -50,6 +53,14 @@ public class AnimShopButtonMine extends View {
     private Paint mNumPaint;
     private int mNum = 0;
     private int mNumMax = 1;
+    private int carshowDuration = 1000;//加入购物车按钮显示合隐藏动画耗时1000ms
+    private float carBtnProcess = 0f;
+    private int arBtnNarrowAlpha = 0;
+    private ValueAnimator carBtnGrowAnimator;
+    private ValueAnimator carBtnNarrowAnimator;
+    private ValueAnimator carBtnNarrowAlphaAnimator;
+    private int arBtnGrowAlpha;
+    private ValueAnimator carBtnGrowAlphaAnimator;
 
     public AnimShopButtonMine(Context context) {
         super(context);
@@ -81,6 +92,7 @@ public class AnimShopButtonMine extends View {
         numTextColor = typedArray.getColor(R.styleable.AnimShopButtonMine_numTextColor, numTextColor);
         numTextSize = typedArray.getDimension(R.styleable.AnimShopButtonMine_numTextSize, numTextSize);
         mNumMax = typedArray.getInteger(R.styleable.AnimShopButtonMine_numMax, mNumMax);
+        carshowDuration = typedArray.getInteger(R.styleable.AnimShopButtonMine_carshowDuration, carshowDuration);
         typedArray.recycle();
 
         //购物车按钮
@@ -95,6 +107,66 @@ public class AnimShopButtonMine extends View {
         mRightBtnPlusPaint = createAPaint(rightBtnPlusColor, 0);
         //中间文字
         mNumPaint = createAPaint(numTextColor, numTextSize);
+
+        //初始化动画
+        initAnimation();
+    }
+
+    private void initAnimation() {
+        carBtnGrowAnimator = ValueAnimator.ofFloat(1, 0);
+        carBtnGrowAnimator.setDuration(carshowDuration);
+        carBtnGrowAnimator.setInterpolator(new LinearInterpolator());
+        carBtnGrowAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                carBtnProcess = (float) animation.getAnimatedValue();
+                invalidate();
+            }
+        });
+
+        carBtnGrowAlphaAnimator = ValueAnimator.ofInt(0, 255);
+        carBtnGrowAlphaAnimator.setDuration(200);
+        carBtnGrowAlphaAnimator.setInterpolator(new LinearInterpolator());
+        carBtnGrowAlphaAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                arBtnGrowAlpha = (int) animation.getAnimatedValue();
+                if (arBtnGrowAlpha == 255) {
+                    carBtnNarrowAnimator.start();
+                }
+                invalidate();
+            }
+        });
+
+        carBtnNarrowAnimator = ValueAnimator.ofFloat(0, 1);
+        carBtnNarrowAnimator.setDuration(carshowDuration);
+        carBtnNarrowAnimator.setInterpolator(new LinearInterpolator());
+        carBtnNarrowAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                carBtnProcess = (float) animation.getAnimatedValue();
+                if (carBtnProcess == 1) {
+                    STATUS = ADD_ONE;
+                    mNum = 1;
+                }
+                invalidate();
+            }
+        });
+        carBtnNarrowAlphaAnimator = ValueAnimator.ofInt(255, 0);
+        carBtnNarrowAlphaAnimator.setDuration(200);
+        carBtnNarrowAlphaAnimator.setInterpolator(new LinearInterpolator());
+        carBtnNarrowAlphaAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                arBtnNarrowAlpha = (int) animation.getAnimatedValue();
+                if (arBtnNarrowAlpha == 0) {
+                    carBtnNarrowAnimator.start();
+                }
+                invalidate();
+            }
+        });
+
+
     }
 
     private Paint createAPaint(int color, float textSize) {
@@ -138,7 +210,6 @@ public class AnimShopButtonMine extends View {
         switch (STATUS) {
             case BEFOR_ADD:
                 drawShopBtn(canvas);
-                //TODO 加入动画
                 break;
             case ADD_ONE:
                 drawLeftbtn(canvas, x, y);
@@ -162,11 +233,12 @@ public class AnimShopButtonMine extends View {
 
     //画加入购物车按钮
     private void drawShopBtn(Canvas canvas) {
-        mBtnRectF.set(0, 0, getWidth(), getHeight());
+        mBtnRectF.set(carBtnProcess * getWidth(), 0, getWidth(), getHeight());
         canvas.drawRoundRect(mBtnRectF, mCarRadius, mCarRadius, mBtnPaint);
         Paint.FontMetrics fontMetrics = mBtnTextPaint.getFontMetrics();
         float baseline = (fontMetrics.descent - fontMetrics.ascent) / 2 - fontMetrics.descent
                 + (getHeight() - getPaddingBottom() - getPaddingTop()) / 2 + getPaddingTop();
+        mBtnTextPaint.setAlpha(arBtnNarrowAlpha);
         canvas.drawText(carText, getPaddingLeft(), baseline, mBtnTextPaint);
     }
 
@@ -204,30 +276,29 @@ public class AnimShopButtonMine extends View {
                     touched = false;
                     switch (STATUS) {
                         case BEFOR_ADD:
-                            STATUS = ADD_ONE;
-                            mNum = 1;
-                            invalidate();
+                            carBtnGrowAlphaAnimator.start();
                             break;
                         case ADD_ONE:
-                            if(getX()<mCenterH*2+getPaddingLeft()) {
+                            if (event.getX() < mCenterH * 2 + btnStrokeWidth) {
                                 //减号处弹起
-                                if(mNum>0) {
+                                if (mNum > 0) {
                                     mNum--;
+                                    if (mNum == 0) {
+                                        STATUS = BEFOR_ADD;
+                                        carBtnGrowAnimator.start();
+                                    }
                                     invalidate();
-                                }else if(mNum==0) {
-                                    STATUS = BEFOR_ADD;
-                                    invalidate();
-                                }else {
+                                } else {
                                     throw new NumberFormatException("num was not legal");
                                 }
-                            }else if(getX()>mCenterH*2) {
+                            } else if (event.getX() > mCenterW * 2 - mCenterH * 2 - btnStrokeWidth) {
                                 //加号处弹起
                                 if (mNum < mNumMax) {
                                     mNum++;
                                     invalidate();
-                                }else if(mNum == mNumMax) {
+                                } else if (mNum == mNumMax) {
                                     Toast.makeText(getContext(), "最大数量为" + mNum, Toast.LENGTH_SHORT).show();
-                                }else {
+                                } else {
                                     throw new NumberFormatException("num was not legal");
                                 }
                             }
