@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.StatisticsViewActivity">
+
+    <com.example.diyview.view.StatisticsView
+        android:id="@+id/statisticsView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lineColor="@color/colorAccent"
+        app:pathColor="@color/green"
+        app:textColor="@color/blue"
+        app:title="七日学习情况(单位 节)" />
+
+</RelativeLayout>

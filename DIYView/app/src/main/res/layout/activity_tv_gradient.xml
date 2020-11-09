@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.diyview.view.GradientTextView
+        android:id="@+id/gradientTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="直播直播直播直播"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        app:changeColor="@color/red"/>
+
+    <Button
+        android:id="@+id/btn_leftToRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="从左到右"/>
+    <Button
+        android:id="@+id/btn_rightToLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="从左到右"/>
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_Content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
