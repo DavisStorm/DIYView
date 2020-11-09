@@ -72,7 +72,7 @@ public class WLikeAnim extends View {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.WLikeAnim);
         duration = typedArray.getInteger(R.styleable.WLikeAnim_wlduration, 300);
         animOn = typedArray.getBoolean(R.styleable.WLikeAnim_animOn, true);
-        ringWidth = typedArray.getDimension(R.styleable.WLikeAnim_ringWidth, 10);
+        ringWidth = typedArray.getDimension(R.styleable.WLikeAnim_WL_ringWidth, 10);
         ringMaxWidth = typedArray.getDimension(R.styleable.WLikeAnim_ringMaxWidth, 30);
         starPadding = typedArray.getDimension(R.styleable.WLikeAnim_starPadding, 0);
         picWidth = typedArray.getDimension(R.styleable.WLikeAnim_picWidth, 10);

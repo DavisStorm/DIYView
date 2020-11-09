@@ -87,7 +87,7 @@ public class StatisticsView extends View {
         title = array.getString(R.styleable.StatisticsView_title);
 
         int lineColor = array.getColor(R.styleable.StatisticsView_lineColor, Color.BLACK);
-        int textColor = array.getColor(R.styleable.StatisticsView_textColor, Color.BLACK);
+        int textColor = array.getColor(R.styleable.StatisticsView_sv_textColor, Color.BLACK);
         int pathColor = array.getColor(R.styleable.StatisticsView_pathColor, Color.BLACK);
 
         mBorderPaint = new Paint();

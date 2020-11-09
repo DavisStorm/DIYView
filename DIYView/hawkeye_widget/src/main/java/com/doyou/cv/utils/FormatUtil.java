@@ -9,6 +9,7 @@ import java.text.DecimalFormat;
  */
 public final class FormatUtil {
 
+
     /**
      * 格式化数字(保留两位小数)
      * @param money

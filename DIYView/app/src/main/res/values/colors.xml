@@ -23,4 +23,5 @@
     <color name="dark">#000000</color>
     <color name="lightblue2">#33CCFF</color>
     <color name="orangee">#FFCC33</color>
+    <color name="heavygrey">#717171</color>
 </resources>

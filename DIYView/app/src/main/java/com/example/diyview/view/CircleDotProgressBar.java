@@ -55,7 +55,7 @@ public class CircleDotProgressBar extends View {
     private int progress;
     private boolean mIsButtonTouched = false;
     private float mButtonRadius = 30;
-    private ClickListener mButtonClickListener;
+    private ClickListener buttonClickListener;
 
     public CircleDotProgressBar(Context context) {
         super(context);
@@ -283,8 +283,8 @@ public class CircleDotProgressBar extends View {
                     }
                     break;
                 case MotionEvent.ACTION_UP:
-                    if (mIsButtonTouched && mButtonClickListener != null) {
-                        mButtonClickListener.onClick(this);
+                    if (mIsButtonTouched && buttonClickListener != null) {
+                        buttonClickListener.onClick(this);
                     }
                     mIsButtonTouched = false;
                     postInvalidate();
@@ -354,11 +354,11 @@ public class CircleDotProgressBar extends View {
     }
 
     public ClickListener getmButtonClickListener() {
-        return mButtonClickListener;
+        return buttonClickListener;
     }
 
     public void setmButtonClickListener(ClickListener mButtonClickListener) {
-        this.mButtonClickListener = mButtonClickListener;
+        this.buttonClickListener = mButtonClickListener;
     }
 
 }
