@@ -46,7 +46,7 @@ public class AnimShopButtonMine extends View {
     private Paint mLeftBtnPaint;
     private Paint mRightBtnCirclePaint;
     private Paint mRightBtnPlusPaint;
-    private float plusAwayFromCircle = 0.4f;//加减符号左端距离圆占半径的百分比
+    private float plusAwayFromCircle = 0.4f;//加减符号左端距离圆的长度占半径的百分比
     private float btnStrokeWidth = SizeUtil.dp2px(1, getContext());
     private int numTextColor = Color.BLACK;
     private float numTextSize = SizeUtil.sp2px(10, getContext());
@@ -55,12 +55,15 @@ public class AnimShopButtonMine extends View {
     private int mNumMax = 1;
     private int carshowDuration = 1000;//加入购物车按钮显示合隐藏动画耗时1000ms
     private float carBtnProcess = 0f;
-    private int arBtnNarrowAlpha = 0;
+    private int arBtnAlpha = 255;
     private ValueAnimator carBtnGrowAnimator;
     private ValueAnimator carBtnNarrowAnimator;
     private ValueAnimator carBtnNarrowAlphaAnimator;
-    private int arBtnGrowAlpha;
     private ValueAnimator carBtnGrowAlphaAnimator;
+    private int btnLeftShowDuration = 1000;//减号按钮显示合隐藏动画耗时1000ms
+    private ValueAnimator btnLeftShowAnimator;
+    private float btnLeftShowPro;
+    private ValueAnimator btnLeftHideAnimator;
 
     public AnimShopButtonMine(Context context) {
         super(context);
@@ -93,6 +96,7 @@ public class AnimShopButtonMine extends View {
         numTextSize = typedArray.getDimension(R.styleable.AnimShopButtonMine_numTextSize, numTextSize);
         mNumMax = typedArray.getInteger(R.styleable.AnimShopButtonMine_numMax, mNumMax);
         carshowDuration = typedArray.getInteger(R.styleable.AnimShopButtonMine_carshowDuration, carshowDuration);
+        btnLeftShowDuration = typedArray.getInteger(R.styleable.AnimShopButtonMine_btnLeftShowDuration, btnLeftShowDuration);
         typedArray.recycle();
 
         //购物车按钮
@@ -121,6 +125,9 @@ public class AnimShopButtonMine extends View {
             public void onAnimationUpdate(ValueAnimator animation) {
                 carBtnProcess = (float) animation.getAnimatedValue();
                 invalidate();
+                if (carBtnProcess == 0) {
+                    carBtnGrowAlphaAnimator.start();
+                }
             }
         });
 
@@ -130,10 +137,7 @@ public class AnimShopButtonMine extends View {
         carBtnGrowAlphaAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
-                arBtnGrowAlpha = (int) animation.getAnimatedValue();
-                if (arBtnGrowAlpha == 255) {
-                    carBtnNarrowAnimator.start();
-                }
+                arBtnAlpha = (int) animation.getAnimatedValue();
                 invalidate();
             }
         });
@@ -145,11 +149,12 @@ public class AnimShopButtonMine extends View {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 carBtnProcess = (float) animation.getAnimatedValue();
+                invalidate();
                 if (carBtnProcess == 1) {
                     STATUS = ADD_ONE;
                     mNum = 1;
+                    btnLeftShowAnimator.start();
                 }
-                invalidate();
             }
         });
         carBtnNarrowAlphaAnimator = ValueAnimator.ofInt(255, 0);
@@ -158,15 +163,40 @@ public class AnimShopButtonMine extends View {
         carBtnNarrowAlphaAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
-                arBtnNarrowAlpha = (int) animation.getAnimatedValue();
-                if (arBtnNarrowAlpha == 0) {
+                arBtnAlpha = (int) animation.getAnimatedValue();
+                if (arBtnAlpha == 0) {
                     carBtnNarrowAnimator.start();
                 }
                 invalidate();
             }
         });
+        btnLeftShowAnimator = ValueAnimator.ofFloat(1, 0);
+        btnLeftShowAnimator.setDuration(btnLeftShowDuration);
+        btnLeftShowAnimator.setInterpolator(new LinearInterpolator());
+        btnLeftShowAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                btnLeftShowPro = (float) animation.getAnimatedValue();
+                invalidate();
+            }
+        });
 
-
+        btnLeftHideAnimator = ValueAnimator.ofFloat(0, 1);
+        btnLeftHideAnimator.setDuration(btnLeftShowDuration);
+        btnLeftHideAnimator.setInterpolator(new LinearInterpolator());
+        btnLeftHideAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                btnLeftShowPro = (float) animation.getAnimatedValue();
+                invalidate();
+                if (btnLeftShowPro==1){
+                    STATUS = BEFOR_ADD;
+                    mNum--;
+                    carBtnGrowAnimator.start();
+                    invalidate();
+                }
+            }
+        });
     }
 
     private Paint createAPaint(int color, float textSize) {
@@ -212,23 +242,24 @@ public class AnimShopButtonMine extends View {
                 drawShopBtn(canvas);
                 break;
             case ADD_ONE:
-                drawLeftbtn(canvas, x, y);
-                drawRightbtn(canvas, x, y);
-                drawCenterNum(canvas, x, y, mNum);
+                drawLeftbtn(canvas);
+                drawRightbtn(canvas);
+                drawCenterNum(canvas, mNum);
                 break;
             default:
                 throw new NumberFormatException("num was not legal");
         }
-
-        //写中间数字
-        //画右边按钮
     }
 
-    private void drawCenterNum(Canvas canvas, int x, int y, int num) {
+    private void drawCenterNum(Canvas canvas, int num) {
         float numWidth = mNumPaint.measureText(num + "");
         Paint.FontMetrics fontMetrics = mNumPaint.getFontMetrics();
         float baseLine = (fontMetrics.descent - fontMetrics.ascent) / 2 - fontMetrics.descent + mCenterH;
-        canvas.drawText(num + "", mCenterW - numWidth / 2, baseLine, mNumPaint);
+        canvas.save();
+        canvas.translate(mCenterW + (mCenterW - mCenterH) * btnLeftShowPro,mCenterH);
+        canvas.rotate(360 * btnLeftShowPro);
+        canvas.drawText(num + "",0 - numWidth / 2 , (fontMetrics.descent-fontMetrics.ascent)/2-fontMetrics.descent, mNumPaint);
+        canvas.restore();
     }
 
     //画加入购物车按钮
@@ -238,22 +269,27 @@ public class AnimShopButtonMine extends View {
         Paint.FontMetrics fontMetrics = mBtnTextPaint.getFontMetrics();
         float baseline = (fontMetrics.descent - fontMetrics.ascent) / 2 - fontMetrics.descent
                 + (getHeight() - getPaddingBottom() - getPaddingTop()) / 2 + getPaddingTop();
-        mBtnTextPaint.setAlpha(arBtnNarrowAlpha);
+        mBtnTextPaint.setAlpha(arBtnAlpha);
         canvas.drawText(carText, getPaddingLeft(), baseline, mBtnTextPaint);
     }
 
     //画左边按钮
-    private void drawLeftbtn(Canvas canvas, int x, int y) {
+    private void drawLeftbtn(Canvas canvas) {
         mLeftBtnPaint.setStyle(Paint.Style.STROKE);
         mLeftBtnPaint.setStrokeWidth(btnStrokeWidth);
         float leftCircleRadius = mCenterH - btnStrokeWidth / 2;
-        canvas.drawCircle(mCenterH, mCenterH, leftCircleRadius, mLeftBtnPaint);
-        canvas.drawLine(leftCircleRadius * plusAwayFromCircle + btnStrokeWidth / 2, mCenterH,
-                mCenterH * 2 - leftCircleRadius * plusAwayFromCircle - btnStrokeWidth / 2, mCenterH, mLeftBtnPaint);
+        float centx = mCenterH + (mCenterW * 2 - mCenterH * 2) * btnLeftShowPro;
+        canvas.save();
+        canvas.translate(centx, mCenterH);
+        canvas.rotate(360 * btnLeftShowPro);
+        canvas.drawCircle(0, 0, leftCircleRadius, mLeftBtnPaint);
+        canvas.drawLine(0 - (1 - plusAwayFromCircle) * leftCircleRadius, 0,
+                (1 - plusAwayFromCircle) * leftCircleRadius, 0, mLeftBtnPaint);
+        canvas.restore();
     }
 
     //画右边按钮
-    private void drawRightbtn(Canvas canvas, int x, int y) {
+    private void drawRightbtn(Canvas canvas) {
         float rightCircleRadius = mCenterH - btnStrokeWidth / 2;
         mRightBtnPlusPaint.setStrokeWidth(btnStrokeWidth);
         canvas.drawCircle(getWidth() - mCenterH, mCenterH, rightCircleRadius, mRightBtnCirclePaint);
@@ -276,7 +312,7 @@ public class AnimShopButtonMine extends View {
                     touched = false;
                     switch (STATUS) {
                         case BEFOR_ADD:
-                            carBtnGrowAlphaAnimator.start();
+                            carBtnNarrowAlphaAnimator.start();
                             break;
                         case ADD_ONE:
                             if (event.getX() < mCenterH * 2 + btnStrokeWidth) {
@@ -284,8 +320,8 @@ public class AnimShopButtonMine extends View {
                                 if (mNum > 0) {
                                     mNum--;
                                     if (mNum == 0) {
-                                        STATUS = BEFOR_ADD;
-                                        carBtnGrowAnimator.start();
+                                        mNum++;
+                                        btnLeftHideAnimator.start();
                                     }
                                     invalidate();
                                 } else {
@@ -302,7 +338,6 @@ public class AnimShopButtonMine extends View {
                                     throw new NumberFormatException("num was not legal");
                                 }
                             }
-
                             break;
                     }
                 }

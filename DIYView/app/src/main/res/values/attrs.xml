@@ -528,5 +528,6 @@
         <attr name="numTextColor" format="color"/>
         <attr name="numMax" format="integer"/>
         <attr name="carshowDuration" format="integer"/>
+        <attr name="btnLeftShowDuration" format="integer"/>
     </declare-styleable>
 </resources>
