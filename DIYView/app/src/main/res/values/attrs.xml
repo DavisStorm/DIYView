@@ -530,4 +530,7 @@
         <attr name="carshowDuration" format="integer"/>
         <attr name="btnLeftShowDuration" format="integer"/>
     </declare-styleable>
+    <declare-styleable name="AddingShoppingCarAnimContainer">
+        <attr name="addCarAnimDuration" format="integer"/>
+    </declare-styleable>
 </resources>

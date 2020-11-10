@@ -64,6 +64,7 @@ public class AnimShopButtonMine extends View {
     private ValueAnimator btnLeftShowAnimator;
     private float btnLeftShowPro;
     private ValueAnimator btnLeftHideAnimator;
+    private PlusOneAnimLisener mPlusLisener;
 
     public AnimShopButtonMine(Context context) {
         super(context);
@@ -153,6 +154,7 @@ public class AnimShopButtonMine extends View {
                 if (carBtnProcess == 1) {
                     STATUS = ADD_ONE;
                     mNum = 1;
+                    numChanged(mNum,true);
                     btnLeftShowAnimator.start();
                 }
             }
@@ -189,9 +191,10 @@ public class AnimShopButtonMine extends View {
             public void onAnimationUpdate(ValueAnimator animation) {
                 btnLeftShowPro = (float) animation.getAnimatedValue();
                 invalidate();
-                if (btnLeftShowPro==1){
+                if (btnLeftShowPro == 1) {
                     STATUS = BEFOR_ADD;
                     mNum--;
+                    numChanged(mNum,false);
                     carBtnGrowAnimator.start();
                     invalidate();
                 }
@@ -254,11 +257,11 @@ public class AnimShopButtonMine extends View {
     private void drawCenterNum(Canvas canvas, int num) {
         float numWidth = mNumPaint.measureText(num + "");
         Paint.FontMetrics fontMetrics = mNumPaint.getFontMetrics();
-        float baseLine = (fontMetrics.descent - fontMetrics.ascent) / 2 - fontMetrics.descent + mCenterH;
+//        float baseLine = (fontMetrics.descent - fontMetrics.ascent) / 2 - fontMetrics.descent + mCenterH;
         canvas.save();
-        canvas.translate(mCenterW + (mCenterW - mCenterH) * btnLeftShowPro,mCenterH);
+        canvas.translate(mCenterW + (mCenterW - mCenterH) * btnLeftShowPro, mCenterH);
         canvas.rotate(360 * btnLeftShowPro);
-        canvas.drawText(num + "",0 - numWidth / 2 , (fontMetrics.descent-fontMetrics.ascent)/2-fontMetrics.descent, mNumPaint);
+        canvas.drawText(num + "", 0 - numWidth / 2, (fontMetrics.descent - fontMetrics.ascent) / 2 - fontMetrics.descent, mNumPaint);
         canvas.restore();
     }
 
@@ -322,6 +325,8 @@ public class AnimShopButtonMine extends View {
                                     if (mNum == 0) {
                                         mNum++;
                                         btnLeftHideAnimator.start();
+                                    }else {
+                                        numChanged(mNum,false);
                                     }
                                     invalidate();
                                 } else {
@@ -331,6 +336,7 @@ public class AnimShopButtonMine extends View {
                                 //加号处弹起
                                 if (mNum < mNumMax) {
                                     mNum++;
+                                    numChanged(mNum,true);
                                     invalidate();
                                 } else if (mNum == mNumMax) {
                                     Toast.makeText(getContext(), "最大数量为" + mNum, Toast.LENGTH_SHORT).show();
@@ -345,4 +351,26 @@ public class AnimShopButtonMine extends View {
         }
         return true;
     }
+
+    /**
+    * num:变更后的数量;plus:是否是增加操作，getId()组件Id传出去
+    * */
+    private void numChanged(int num,boolean plus) {
+        Toast.makeText(getContext(), num + "", Toast.LENGTH_SHORT).show();
+        if (plus){
+            mPlusLisener.onNumPlus(num,getId());
+        }
+    }
+    public interface PlusOneAnimLisener{
+        void onNumPlus(int num,int componentId);
+    }
+
+    public void setmPlusLisener(PlusOneAnimLisener mPlusLisener) {
+        this.mPlusLisener = mPlusLisener;
+    }
+
+    public int getmNum() {
+        return mNum;
+    }
+
 }

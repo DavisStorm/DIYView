@@ -1,57 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.diyview.view.AddingShoppingCarAnimContainer
+    android:id="@+id/addCarContainerFm"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <com.mcxtzhang.lib.AnimShopButton
-        android:id="@+id/btn1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:maxCount="3"/>
-    <!--设置了两圆间距-->
-    <com.mcxtzhang.lib.AnimShopButton
-        android:id="@+id/btn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:count="3"
-        app:gapBetweenCircle="90dp"
-        app:maxCount="99"/>
-    <!--仿饿了么-->
-    <com.mcxtzhang.lib.AnimShopButton
-        android:id="@+id/btnEle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:addEnableBgColor="#3190E8"
-        app:addEnableFgColor="#ffffff"
-        app:hintBgColor="#3190E8"
-        app:hintBgRoundValue="15dp"
-        app:hintFgColor="#ffffff"
-        app:maxCount="99"/>
-    <com.example.diyview.view.AnimShopButtonMine
-        android:id="@+id/mine_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="100dp"
-        android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        app:carColor="@color/orangee"
-        app:carRadius="25dp"
-        app:carText="添加购物车"
-        app:carTextColor="@color/txt_black"
-        app:carTextSize="35sp"
-        app:leftBtnCircleColor="@color/heavygrey"
-        app:rightBtnCircleCorlo="@color/orangee"
-        app:rightBtnPlusColor="@color/txt_black"
-        app:btnStrokeWidth="1dp"
-        app:numTextSize="35sp"
-        app:numTextColor="@color/blue"
-        app:numMax="4"
-        app:carshowDuration="300"
-        app:btnLeftShowDuration="300"
-        />
+    android:layout_height="match_parent"
+    app:addCarAnimDuration="1000">
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.mcxtzhang.lib.AnimShopButton
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:maxCount="3" />
+
+            <ImageView
+                android:id="@+id/shopBasket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="30dp"
+                android:src="@drawable/ic_shopcar" />
+        </RelativeLayout>
+        <!--设置了两圆间距-->
+        <com.mcxtzhang.lib.AnimShopButton
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:count="3"
+            app:gapBetweenCircle="90dp"
+            app:maxCount="99" />
+        <!--仿饿了么-->
+        <com.mcxtzhang.lib.AnimShopButton
+            android:id="@+id/btnEle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:addEnableBgColor="#3190E8"
+            app:addEnableFgColor="#ffffff"
+            app:hintBgColor="#3190E8"
+            app:hintBgRoundValue="15dp"
+            app:hintFgColor="#ffffff"
+            app:maxCount="99" />
+
+        <com.example.diyview.view.AnimShopButtonMine
+            android:id="@+id/mine_btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            app:btnLeftShowDuration="300"
+            app:btnStrokeWidth="1dp"
+            app:carColor="@color/orangee"
+            app:carRadius="25dp"
+            app:carText="添加购物车"
+            app:carTextColor="@color/txt_black"
+            app:carTextSize="35sp"
+            app:carshowDuration="300"
+            app:leftBtnCircleColor="@color/heavygrey"
+            app:numMax="4"
+            app:numTextColor="@color/blue"
+            app:numTextSize="35sp"
+            app:rightBtnCircleCorlo="@color/orangee"
+            app:rightBtnPlusColor="@color/txt_black" />
+
+        <com.example.diyview.view.AnimShopButtonMine
+            android:id="@+id/mine_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            app:btnLeftShowDuration="300"
+            app:btnStrokeWidth="1dp"
+            app:carColor="@color/orangee"
+            app:carRadius="25dp"
+            app:carText="添加购物车"
+            app:carTextColor="@color/txt_black"
+            app:carTextSize="35sp"
+            app:carshowDuration="300"
+            app:leftBtnCircleColor="@color/heavygrey"
+            app:numMax="4"
+            app:numTextColor="@color/blue"
+            app:numTextSize="35sp"
+            app:rightBtnCircleCorlo="@color/orangee"
+            app:rightBtnPlusColor="@color/txt_black" />
+
+        <com.example.diyview.view.AnimShopButtonMine
+            android:id="@+id/mine_btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="100dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            app:btnLeftShowDuration="300"
+            app:btnStrokeWidth="1dp"
+            app:carColor="@color/orangee"
+            app:carRadius="25dp"
+            app:carText="添加购物车"
+            app:carTextColor="@color/txt_black"
+            app:carTextSize="35sp"
+            app:carshowDuration="300"
+            app:leftBtnCircleColor="@color/heavygrey"
+            app:numMax="4"
+            app:numTextColor="@color/blue"
+            app:numTextSize="35sp"
+            app:rightBtnCircleCorlo="@color/orangee"
+            app:rightBtnPlusColor="@color/txt_black" />
+
+        <ImageView
+            android:id="@+id/add_action_iv_move"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/likebtn" />
+
+        <com.lid.lib.LabelButtonView
+            android:id="@+id/labelbutton"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:background="#03a9f4"
+            android:gravity="center"
+            android:text="Button"
+            android:textColor="#ffffff"
+            app:label_backgroundColor="#C2185B"
+            app:label_distance="20dp"
+            app:label_height="20dp"
+            app:label_orientation="RIGHT_TOP"
+            app:label_text="HD"
+            app:label_textSize="12sp" />
+    </LinearLayout>
+
+</com.example.diyview.view.AddingShoppingCarAnimContainer>
