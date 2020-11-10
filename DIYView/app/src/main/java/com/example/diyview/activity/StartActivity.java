@@ -35,6 +35,7 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
         findViewById(R.id.tv_Widget_Cases).setOnClickListener(this);
         findViewById(R.id.tv_GradientTextView).setOnClickListener(this);
         findViewById(R.id.tv_AnimShopButton).setOnClickListener(this);
+        findViewById(R.id.tv_Others).setOnClickListener(this);
     }
 
     @Override
@@ -91,6 +92,9 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.tv_AnimShopButton:
                 intent.setClass(this,AnimShopButtonActivity.class);
+                break;
+            case R.id.tv_Others:
+                intent.setClass(this,OtherActivity.class);
                 break;
         }
         startActivity(intent);
