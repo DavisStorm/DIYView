@@ -13,4 +13,10 @@
         android:layout_height="wrap_content"
         android:text="http://www.androidcup.com/index.php/2019/09/05/chromeliketabswitcher/"
         />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://www.sohu.com/a/431026770_611601"
+        />
 </LinearLayout>
