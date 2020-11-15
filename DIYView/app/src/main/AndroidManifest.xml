@@ -49,6 +49,7 @@
         <activity android:name=".activity.GradientLineActivity" />
         <activity android:name=".activity.GradientTextViewActivity" />
         <activity android:name=".activity.AnimShopButtonActivity" />
+        <activity android:name=".activity.OtherActivity" />
     </application>
 
 </manifest>

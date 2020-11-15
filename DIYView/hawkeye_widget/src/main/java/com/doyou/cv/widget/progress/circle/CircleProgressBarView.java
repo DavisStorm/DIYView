@@ -140,7 +140,6 @@ public class CircleProgressBarView extends View {
         centerProgressTextColor = typedArray.getColor(R.styleable.CircleProgressBarView_centerProgressTextColor, mEndColor);
         centerProgressTextSize = typedArray.getDimensionPixelOffset(R.styleable.CircleProgressBarView_centerProgressTextSize, DensityUtil.sp2px(mContext,centerProgressTextSize));
         lineWidth = typedArray.getDimensionPixelOffset(R.styleable.CircleProgressBarView_lineWidthcircle, DensityUtil.dp2px(1));
-        lineColor = typedArray.getColor(R.styleable.CircleProgressBarView_lineColor, circleBgColor);
         targetNumColor = typedArray.getColor(R.styleable.CircleProgressBarView_targetNumColor, targetNumColor);
         targetNumSize = typedArray.getDimensionPixelSize(R.styleable.CircleProgressBarView_targetNumSize, DensityUtil.sp2px(mContext,20));
         targetTextSize = typedArray.getDimensionPixelSize(R.styleable.CircleProgressBarView_targetTextSize, DensityUtil.sp2px(mContext,12));
