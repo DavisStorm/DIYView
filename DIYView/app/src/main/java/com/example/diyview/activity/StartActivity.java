@@ -1,12 +1,12 @@
 package com.example.diyview.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import com.example.diyview.R;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class StartActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -36,6 +36,7 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
         findViewById(R.id.tv_GradientTextView).setOnClickListener(this);
         findViewById(R.id.tv_AnimShopButton).setOnClickListener(this);
         findViewById(R.id.tv_Others).setOnClickListener(this);
+        findViewById(R.id.tv_ViewDragHelper).setOnClickListener(this);
     }
 
     @Override
@@ -92,6 +93,9 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.tv_AnimShopButton:
                 intent.setClass(this,AnimShopButtonActivity.class);
+                break;
+            case R.id.tv_ViewDragHelper:
+                intent.setClass(this,ViewDraghelperActivity.class);
                 break;
             case R.id.tv_Others:
                 intent.setClass(this,OtherActivity.class);
