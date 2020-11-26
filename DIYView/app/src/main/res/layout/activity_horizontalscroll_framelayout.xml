@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/sv_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:focusable="true"
+                android:layout_marginTop="50dp"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="10dp">
+                <RadioGroup
+                    android:id="@+id/rg_pay_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_terminal"
+                        style="@style/home_pay_style"
+                        android:checked="true"
+                        android:background="@drawable/home_pay_selector"
+                        android:text="终端收款" />
+
+                    <RadioButton
+                        android:id="@+id/rb_no_terminal"
+                        style="@style/home_pay_style"
+                        android:layout_marginLeft="-22dp"
+                        android:background="@drawable/home_pay_no_terminal_selector"
+                        android:text="无终端收款" />
+                </RadioGroup>
+
+                <com.example.diyview.activity.HorizontalScrollFrameLayout
+                    android:id="@+id/ll_horizental_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_pay_terminal_bg"
+                    android:gravity="center"
+                    android:paddingTop="28dp"
+                    app:sweep_valueable_rate="0.3"
+                    android:paddingBottom="28dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_no_terminal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/tv_home_menu3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/icon_scancode3x"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:text="扫码收款"
+                            android:textColor="@color/white"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/tv_home_menu4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/icon_nfc"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:text="NFC收款"
+                            android:textColor="@color/white"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/ll_terminal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <RelativeLayout
+                            android:id="@+id/rl_home_menu1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/tv_home_menu1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableTop="@drawable/icon_ylsh3x"
+                                android:drawablePadding="10dp"
+                                android:gravity="center"
+                                android:text="银联闪惠"
+                                android:textColor="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="16dp"
+                                android:background="@drawable/shape_uinonpay_0_38"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:text="0.38"
+                                android:textColor="@color/white"
+                                android:textSize="10sp" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/tv_home_menu2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:drawableTop="@drawable/icon_receipt3x"
+                            android:drawablePadding="10dp"
+                            android:gravity="center"
+                            android:text="刷卡收款"
+                            android:textColor="@color/white"
+                            android:visibility="visible" />
+                    </LinearLayout>
+                </com.example.diyview.activity.HorizontalScrollFrameLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5000dp"
+                android:textSize="50sp"
+                android:text="this is a a scrollview"
+                android:gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

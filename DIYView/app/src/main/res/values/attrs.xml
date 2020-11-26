@@ -533,4 +533,7 @@
     <declare-styleable name="AddingShoppingCarAnimContainer">
         <attr name="addCarAnimDuration" format="integer"/>
     </declare-styleable>
+    <declare-styleable name="HorizontalScrollLinearLayout">
+        <attr name="sweep_valueable_rate" format="float"/>
+    </declare-styleable>
 </resources>

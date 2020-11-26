@@ -36,6 +36,7 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
         findViewById(R.id.tv_GradientTextView).setOnClickListener(this);
         findViewById(R.id.tv_AnimShopButton).setOnClickListener(this);
         findViewById(R.id.tv_Others).setOnClickListener(this);
+        findViewById(R.id.tv_HorizontalScrollFrameLayout).setOnClickListener(this);
     }
 
     @Override
@@ -92,6 +93,9 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.tv_AnimShopButton:
                 intent.setClass(this,AnimShopButtonActivity.class);
+                break;
+            case R.id.tv_HorizontalScrollFrameLayout:
+                intent.setClass(this,HorizontalScrollFrameLayoutActivity.class);
                 break;
             case R.id.tv_Others:
                 intent.setClass(this,OtherActivity.class);
