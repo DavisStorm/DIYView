@@ -1,4 +1,4 @@
-package com.example.diyview.activity;
+package com.example.diyview.view;
 
 import android.animation.ValueAnimator;
 import android.content.Context;

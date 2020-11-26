@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.diyview.R;
 import com.example.diyview.view.AddingShoppingCarAnimContainer;
 import com.example.diyview.view.AnimShopButtonMine;
-
+import com.example.diyview.view.HorizontalScrollFrameLayout;
 
 
 public class HorizontalScrollFrameLayoutActivity extends AppCompatActivity{

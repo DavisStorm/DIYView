@@ -52,6 +52,7 @@
         <activity android:name=".activity.OtherActivity" />
         <activity android:name=".activity.ViewDraghelperActivity" />
         <activity android:name=".activity.HorizontalScrollFrameLayoutActivity" />
+        <activity android:name=".activity.SlidingViewActivity" />
     </application>
 
 </manifest>

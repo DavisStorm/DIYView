@@ -144,6 +144,13 @@
             android:gravity="center"
             android:text="HorizontalScrollFrameLayout"/>
         <TextView
+            android:id="@+id/tv_SlidingView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/bottom_line"
+            android:gravity="center"
+            android:text="SlidingView"/>
+        <TextView
             android:id="@+id/tv_Others"
             android:layout_width="match_parent"
             android:layout_height="40dp"
