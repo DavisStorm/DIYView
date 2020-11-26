@@ -50,6 +50,7 @@
         <activity android:name=".activity.GradientTextViewActivity" />
         <activity android:name=".activity.AnimShopButtonActivity" />
         <activity android:name=".activity.OtherActivity" />
+        <activity android:name=".activity.ViewDraghelperActivity" />
         <activity android:name=".activity.HorizontalScrollFrameLayoutActivity" />
     </application>
 
