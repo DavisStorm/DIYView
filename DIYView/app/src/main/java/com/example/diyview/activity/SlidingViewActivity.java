@@ -15,5 +15,11 @@ public class SlidingViewActivity extends AppCompatActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slidingview);
+        findViewById(R.id.img_content).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(SlidingViewActivity.this, "content clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

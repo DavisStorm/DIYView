@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.example.diyview.view.SlidingView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:effective_slide_rate="0.3">
     <!--内容区域-->
     <FrameLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/orange">
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/img_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@color/orange"/>
     </FrameLayout>
     <!--侧滑菜单-->
     <ImageView
         android:id="@+id/slidingmenu"
-        android:layout_width="0dp"
+        android:layout_width="300dp"
         android:layout_height="match_parent"
         android:src="@color/lightblue2"/>
 </com.example.diyview.view.SlidingView>

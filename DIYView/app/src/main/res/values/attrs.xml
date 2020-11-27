@@ -536,4 +536,7 @@
     <declare-styleable name="HorizontalScrollLinearLayout">
         <attr name="sweep_valueable_rate" format="float"/>
     </declare-styleable>
+    <declare-styleable name="SlidingView">
+        <attr name="effective_slide_rate" format="float"/>
+    </declare-styleable>
 </resources>
