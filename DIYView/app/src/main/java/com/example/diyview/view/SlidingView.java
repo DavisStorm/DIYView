@@ -22,7 +22,6 @@ public class SlidingView extends FrameLayout {
     private float effective_slide_rate = 0.5f;
     private int childLeftWidth;
     private float originX;
-    private float originY;
 
     public SlidingView(@NonNull Context context) {
         super(context);
@@ -85,11 +84,18 @@ public class SlidingView extends FrameLayout {
                 if (totalDistance >= childLeftWidth || totalDistance <= 0) {
                     totalDistance = totalDistance <= 0 ? 0 : childLeftWidth;
                 }
-                STATUS = (STATUS == 0 && totalDistance > width * effective_slide_rate) ? 1 : 0;
-                LogUtil.e("out onTouchEvent", "ACTION_MOVE totalDistance：" + totalDistance);
-                if (Math.abs(event.getX() - originX) > width * effective_slide_rate) {
-                    STATUS = STATUS == 0 ? 1 : 0;
+                //Math.abs(event.getX() - originX) > width * effective_slide_rate
+                if (Math.abs(totalDistance) > width * effective_slide_rate) {//滑动距离达到有效长度
+                    if (STATUS == 0 && totalDistance > 0) {//右滑
+                        STATUS = 1;
+                    }
+                    if (STATUS == 1 && totalDistance < 0) {//左滑
+                        STATUS = 0;
+                    }
+                } else {//没有达到有效长度，可能是还没滑到也有可能是已经滑到了但是又滑回来了
+                    STATUS = totalDistance > 0 ? 0 : 1;
                 }
+                LogUtil.e("out onTouchEvent", "ACTION_MOVE totalDistance：" + totalDistance);
                 requestLayout();
                 return true;
             case MotionEvent.ACTION_UP:
@@ -115,6 +121,7 @@ public class SlidingView extends FrameLayout {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent event) {
+        //内部有控件点击事件这么写，没有就直接return true
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 LogUtil.e("out onInterceptTouchEvent", "ACTION_DOWN");

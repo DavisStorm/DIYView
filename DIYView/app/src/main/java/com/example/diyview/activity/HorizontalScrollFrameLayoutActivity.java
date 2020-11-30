@@ -2,7 +2,6 @@ package com.example.diyview.activity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -10,19 +9,11 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.diyview.R;
-import com.example.diyview.view.AddingShoppingCarAnimContainer;
-import com.example.diyview.view.AnimShopButtonMine;
 import com.example.diyview.view.HorizontalScrollFrameLayout;
 
 
 public class HorizontalScrollFrameLayoutActivity extends AppCompatActivity{
 
-    private AnimShopButtonMine asBtn1;
-    private AnimShopButtonMine asBtn2;
-    private AnimShopButtonMine asBtn3;
-    private ImageView add_action_iv_move;
-    private ImageView shopBasket;
-    private AddingShoppingCarAnimContainer addCarContainerFm;
     private RadioGroup rgPayHome;
     private HorizontalScrollFrameLayout ll_horizental_scroll;
 

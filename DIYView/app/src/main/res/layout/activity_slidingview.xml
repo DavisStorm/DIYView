@@ -8,17 +8,28 @@
     <FrameLayout
         android:id="@+id/content"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ImageView
-            android:id="@+id/img_content"
+        android:layout_height="match_parent"
+        android:background="@color/orange">
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@color/orange"/>
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="这是内容区域"
+            android:textColor="@color/white"/>
     </FrameLayout>
     <!--侧滑菜单-->
-    <ImageView
-        android:id="@+id/slidingmenu"
+    <RelativeLayout
+        android:id="@+id/drag_side"
         android:layout_width="300dp"
         android:layout_height="match_parent"
-        android:src="@color/lightblue2"/>
+        android:background="@color/lightblue2">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="这是侧滑区域"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
 </com.example.diyview.view.SlidingView>

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.diyview.R;
+import com.example.diyview.view.dragimageview.ViewDragImageActivity;
 
 public class StartActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -39,6 +40,7 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
         findViewById(R.id.tv_ViewDragHelper).setOnClickListener(this);
         findViewById(R.id.tv_HorizontalScrollFrameLayout).setOnClickListener(this);
         findViewById(R.id.tv_SlidingView).setOnClickListener(this);
+        findViewById(R.id.tv_ViewDragImage).setOnClickListener(this);
     }
 
     @Override
@@ -104,6 +106,9 @@ public class StartActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.tv_SlidingView:
                 intent.setClass(this,SlidingViewActivity.class);
+                break;
+            case R.id.tv_ViewDragImage:
+                intent.setClass(this, ViewDragImageActivity.class);
                 break;
             case R.id.tv_Others:
                 intent.setClass(this,OtherActivity.class);
