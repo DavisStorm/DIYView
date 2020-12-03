@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import com.example.diyview.R;
-import com.example.diyview.view.StatisticsView;
 
 public class MainActivity extends AppCompatActivity {
 

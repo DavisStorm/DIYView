@@ -11,11 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.doyou.cv.utils.ToastUtils;
 import com.doyou.cv.widget.progress.ring.RingView;
 import com.example.diyview.R;
-import com.example.diyview.bean.RingViewMineBean;
-import com.example.diyview.view.RingViewMine;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class RingViewActivity extends AppCompatActivity {
 

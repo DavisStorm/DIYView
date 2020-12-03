@@ -78,7 +78,7 @@
             android:textColor="#666666"
             android:textSize="@dimen/page_font_size" />
 
-        <com.example.diyview.view.SectionProBarMine
+        <com.example.diyview.divview.SectionProBarMine
             android:tag="1"
             android:id="@+id/gradientSpb"
             style="@android:style/Widget.ProgressBar.Horizontal"

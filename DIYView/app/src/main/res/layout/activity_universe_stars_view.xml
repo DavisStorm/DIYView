@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".activity.UniverseStarsViewActivity">
-    <com.example.diyview.view.UniverseStarsView
+    <com.example.diyview.divview.UniverseStarsView
         android:id="@+id/universeStarsView"
         android:layout_width="350dp"
         android:layout_height="350dp"
@@ -18,7 +18,7 @@
         app:maxOffset="100dp"
         android:background="@color/lightblue"
         android:gravity="center">
-        <com.example.diyview.view.RoundRecImageView
+        <com.example.diyview.divview.RoundRecImageView
             xmlns:civ="http://schemas.android.com/apk/res-auto"
             android:id="@+id/centerImg"
             android:layout_width="100dp"
@@ -26,8 +26,8 @@
             android:scaleType="fitXY"
             android:src="@mipmap/roundpic"
             civ:circle="true"/>
-    </com.example.diyview.view.UniverseStarsView>
-    <com.example.diyview.view.RoundRecImageView
+    </com.example.diyview.divview.UniverseStarsView>
+    <com.example.diyview.divview.RoundRecImageView
         xmlns:civ="http://schemas.android.com/apk/res-auto"
         android:layout_width="126dp"
         android:layout_height="126dp"

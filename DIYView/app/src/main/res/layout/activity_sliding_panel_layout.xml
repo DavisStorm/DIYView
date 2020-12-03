@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xw.repo.supl.SlidingUpPanelLayout
+    android:id="@+id/sliding_up_panel_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 背景view, 在位置0处只能有一个直接子view，可以是一个view也可以是一个layout。 -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bg_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#616161">
+
+        <TextView
+            android:id="@+id/pick_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="120dp"
+            android:text="Pick a credit card to pay"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/pay_hint_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            android:alpha="0.0"
+            android:drawablePadding="8dp"
+            android:drawableTop="@color/orange"
+            android:text="Pay with Touch ID"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:alpha="1.0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- panel view, 从位置1到最后，这些子view必须是实现了ISlidingUpPanel接口的view.-->
+    <com.example.diyview.divview.CardPanelView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cpv_cardCount="4"
+        app:cpv_cardImageRes="@color/red"
+        app:cpv_cardPosition="0"/>
+
+    <com.example.diyview.divview.CardPanelView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cpv_cardCount="4"
+        app:cpv_cardImageRes="@color/blue"
+        app:cpv_cardPosition="1"/>
+
+    <com.example.diyview.divview.CardPanelView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cpv_cardCount="4"
+        app:cpv_cardImageRes="@color/orange"
+        app:cpv_cardPosition="2"/>
+
+    <com.example.diyview.divview.CardPanelView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cpv_cardCount="4"
+        app:cpv_cardImageRes="@color/green"
+        app:cpv_cardPosition="3"/>
+
+</com.xw.repo.supl.SlidingUpPanelLayout>

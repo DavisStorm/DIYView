@@ -52,7 +52,7 @@
                         android:text="无终端收款" />
                 </RadioGroup>
 
-                <com.example.diyview.view.HorizontalScrollFrameLayout
+                <com.example.diyview.divview.HorizontalScrollFrameLayout
                     android:id="@+id/ll_horizental_scroll"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -145,7 +145,7 @@
                             android:textColor="@color/white"
                             android:visibility="visible" />
                     </LinearLayout>
-                </com.example.diyview.view.HorizontalScrollFrameLayout>
+                </com.example.diyview.divview.HorizontalScrollFrameLayout>
             </LinearLayout>
             <TextView
                 android:layout_width="match_parent"

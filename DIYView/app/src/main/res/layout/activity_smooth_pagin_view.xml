@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity=""
     android:layout_height="match_parent">
-<com.example.diyview.view.SmoothPagingView
+<com.example.diyview.divview.SmoothPagingView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:img1="@drawable/img1"

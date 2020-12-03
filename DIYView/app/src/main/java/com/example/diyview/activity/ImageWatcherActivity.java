@@ -4,7 +4,7 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.diyview.R;
-import com.example.diyview.view.ImageWatcher;
+import com.example.diyview.divview.ImageWatcher;
 
 public class ImageWatcherActivity extends AppCompatActivity {
     @Override

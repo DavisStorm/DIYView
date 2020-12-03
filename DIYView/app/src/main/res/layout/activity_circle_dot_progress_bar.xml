@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.CircleDotProgressBarActivity">
-    <com.example.diyview.view.CircleDotProgressBardiy
+    <com.example.diyview.divview.CircleDotProgressBardiy
         android:id="@+id/circleDotProgressBarDiy"
         android:layout_width="300dp"
         android:layout_height="300dp"
@@ -28,7 +28,7 @@
         app:btnTextColor="@color/white"
         app:btnYspace="2dp"
         />
-    <com.example.diyview.view.CircleDotProgressBar
+    <com.example.diyview.divview.CircleDotProgressBar
         android:id="@+id/circleDotProgressBar"
         android:layout_below="@+id/circleDotProgressBarDiy"
         android:layout_marginTop="20dp"

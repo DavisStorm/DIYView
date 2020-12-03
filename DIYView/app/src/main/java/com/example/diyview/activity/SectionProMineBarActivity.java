@@ -1,16 +1,13 @@
 package com.example.diyview.activity;
 
-import android.content.Context;
 import android.os.Bundle;
-import android.util.AttributeSet;
-import android.view.View;
 import android.widget.SeekBar;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.diyview.R;
-import com.example.diyview.view.SectionProBarMine;
+import com.example.diyview.divview.SectionProBarMine;
 
 public class SectionProMineBarActivity extends AppCompatActivity {
 

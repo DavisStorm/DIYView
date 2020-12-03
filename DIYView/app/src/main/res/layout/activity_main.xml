@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.example.diyview.view.MyScrollView
+<com.example.diyview.divview.MyScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/scv"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -10,4 +10,4 @@
         android:layout_height="wrap_content"
         tools:context=".activity.MainActivity">
     </RelativeLayout>
-</com.example.diyview.view.MyScrollView>
+</com.example.diyview.divview.MyScrollView>

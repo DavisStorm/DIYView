@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".activity.DragImageViewActivity">
 
-    <com.example.diyview.view.DragImageView
+    <com.example.diyview.divview.DragImageView
         android:layout_width="match_parent"
         android:layout_height="350dp"
         app:drawable="@drawable/ic_launcher_background"/>

@@ -168,7 +168,7 @@
         </LinearLayout>
 
     </LinearLayout>
-    <com.example.diyview.view.MatrixShowView
+    <com.example.diyview.divview.MatrixShowView
         android:id="@+id/matrix_zone"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

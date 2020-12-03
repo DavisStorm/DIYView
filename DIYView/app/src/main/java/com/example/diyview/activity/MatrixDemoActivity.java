@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.ProgressBar;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -15,15 +14,10 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.diyview.R;
-import com.example.diyview.utils.SizeUtil;
-import com.example.diyview.view.CanvasShowView;
-import com.example.diyview.view.MatrixShowView;
-import com.example.diyview.view.dialog.CommonDialog;
-import com.example.diyview.view.dialog.DialogViewHolder;
+import com.example.diyview.divview.MatrixShowView;
 
 public class MatrixDemoActivity extends AppCompatActivity {
 

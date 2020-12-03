@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 import com.example.diyview.R;
-import com.example.diyview.view.CircleDotProgressBar;
-import com.example.diyview.view.CircleDotProgressBardiy;
+import com.example.diyview.divview.CircleDotProgressBar;
+import com.example.diyview.divview.CircleDotProgressBardiy;
 
 import java.util.Timer;
 import java.util.TimerTask;

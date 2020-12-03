@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 import com.doyou.cv.widget.GradientLine;
 import com.example.diyview.R;
-import com.example.diyview.view.GradientLineMine;
+import com.example.diyview.divview.GradientLineMine;
 
 public class GradientLineActivity extends WithBackPressBaseActivity {
     @Override

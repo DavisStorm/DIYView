@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.example.diyview.view.SlidingView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.example.diyview.divview.SlidingView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -32,4 +32,4 @@
             android:text="这是侧滑区域"
             android:textColor="@color/white"/>
     </RelativeLayout>
-</com.example.diyview.view.SlidingView>
+</com.example.diyview.divview.SlidingView>

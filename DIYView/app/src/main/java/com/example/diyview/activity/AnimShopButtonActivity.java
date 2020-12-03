@@ -1,28 +1,19 @@
 package com.example.diyview.activity;
 
-import android.animation.AnimatorSet;
-import android.animation.ObjectAnimator;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.PixelFormat;
 import android.graphics.Point;
-import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
-import com.bumptech.glide.Glide;
 import com.example.diyview.R;
-import com.example.diyview.view.AddingShoppingCarAnimContainer;
-import com.example.diyview.view.AnimShopButtonMine;
+import com.example.diyview.divview.AddingShoppingCarAnimContainer;
+import com.example.diyview.divview.AnimShopButtonMine;
 
 
 /**

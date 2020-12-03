@@ -3,14 +3,13 @@ package com.example.diyview.activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
 import com.example.diyview.R;
-import com.example.diyview.view.RoundRecImageView;
-import com.example.diyview.view.UniverseStarsView;
+import com.example.diyview.divview.RoundRecImageView;
+import com.example.diyview.divview.UniverseStarsView;
 
 public class UniverseStarsViewActivity extends AppCompatActivity {
 

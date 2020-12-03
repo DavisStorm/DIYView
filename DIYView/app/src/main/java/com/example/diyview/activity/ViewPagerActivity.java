@@ -1,16 +1,11 @@
 package com.example.diyview.activity;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
 
 import com.example.diyview.R;
-import com.example.diyview.view.LitePager;
+import com.example.diyview.divview.LitePager;
 
 public class ViewPagerActivity extends AppCompatActivity {
 

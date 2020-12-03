@@ -1,7 +1,6 @@
 package com.example.diyview.activity;
 
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,9 +16,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.diyview.R;
 import com.example.diyview.utils.SizeUtil;
-import com.example.diyview.view.CanvasShowView;
-import com.example.diyview.view.dialog.CommonDialog;
-import com.example.diyview.view.dialog.DialogViewHolder;
+import com.example.diyview.divview.CanvasShowView;
+import com.example.diyview.divview.dialog.CommonDialog;
+import com.example.diyview.divview.dialog.DialogViewHolder;
 
 public class CanvasDemoActivity extends AppCompatActivity {
 

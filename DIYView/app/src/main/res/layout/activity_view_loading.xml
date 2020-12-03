@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:gravity="center"
     android:layout_height="match_parent">
-    <com.example.diyview.view.LoadingView
+    <com.example.diyview.divview.LoadingView
         android:layout_width="60dp"
         android:layout_height="10dp"
         app:leftColor="@color/purered"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.example.diyview.view.AddingShoppingCarAnimContainer
+<com.example.diyview.divview.AddingShoppingCarAnimContainer
     android:id="@+id/addCarContainerFm"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -50,7 +50,7 @@
             app:hintFgColor="#ffffff"
             app:maxCount="99" />
 
-        <com.example.diyview.view.AnimShopButtonMine
+        <com.example.diyview.divview.AnimShopButtonMine
             android:id="@+id/mine_btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
             app:rightBtnCircleCorlo="@color/orangee"
             app:rightBtnPlusColor="@color/txt_black" />
 
-        <com.example.diyview.view.AnimShopButtonMine
+        <com.example.diyview.divview.AnimShopButtonMine
             android:id="@+id/mine_btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -100,7 +100,7 @@
             app:rightBtnCircleCorlo="@color/orangee"
             app:rightBtnPlusColor="@color/txt_black" />
 
-        <com.example.diyview.view.AnimShopButtonMine
+        <com.example.diyview.divview.AnimShopButtonMine
             android:id="@+id/mine_btn3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -147,4 +147,4 @@
             app:label_textSize="12sp" />
     </LinearLayout>
 
-</com.example.diyview.view.AddingShoppingCarAnimContainer>
+</com.example.diyview.divview.AddingShoppingCarAnimContainer>

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.diyview.view.WLikeAnim
+    <com.example.diyview.divview.WLikeAnim
         android:id="@+id/wl_anim"
         android:layout_width="150dp"
         android:layout_height="150dp"

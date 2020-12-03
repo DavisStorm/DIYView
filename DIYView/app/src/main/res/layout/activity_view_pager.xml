@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.ViewPagerActivity">
-    <com.example.diyview.view.LitePager
+    <com.example.diyview.divview.LitePager
         android:id="@+id/vp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,5 +26,5 @@
             android:layout_width="150dp"
             android:layout_height="200dp"
             android:background="#00F"/>
-    </com.example.diyview.view.LitePager>
+    </com.example.diyview.divview.LitePager>
 </RelativeLayout>

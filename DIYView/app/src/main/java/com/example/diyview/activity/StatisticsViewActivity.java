@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.diyview.R;
-import com.example.diyview.view.StatisticsView;
+import com.example.diyview.divview.StatisticsView;
 
 public class StatisticsViewActivity extends AppCompatActivity {
 

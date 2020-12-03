@@ -14,7 +14,7 @@
         android:background="@color/grey"
         android:layout_above="@+id/rv_controler"
         android:layout_marginBottom="3dp"/>
-    <com.example.diyview.view.CanvasShowView
+    <com.example.diyview.divview.CanvasShowView
         android:id="@+id/canvas_zone"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

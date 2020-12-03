@@ -53,7 +53,8 @@
         <activity android:name=".activity.ViewDraghelperActivity" />
         <activity android:name=".activity.HorizontalScrollFrameLayoutActivity" />
         <activity android:name=".activity.SlidingViewActivity" />
-        <activity android:name=".view.dragimageview.ViewDragImageActivity" />
+        <activity android:name=".divview.dragimageview.ViewDragImageActivity" />
+        <activity android:name=".activity.SlidingPanelLayoutActivity" />
     </application>
 
 </manifest>

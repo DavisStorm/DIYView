@@ -82,7 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="32dp"
             app:layout_constraintTop_toBottomOf="@+id/gLineBtn2"/>
-        <com.example.diyview.view.GradientLineMine
+        <com.example.diyview.divview.GradientLineMine
             android:id="@+id/gLineAgainMine"
             android:layout_width="200dp"
             android:layout_height="100dp"

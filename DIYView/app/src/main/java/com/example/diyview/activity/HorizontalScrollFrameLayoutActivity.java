@@ -9,7 +9,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.diyview.R;
-import com.example.diyview.view.HorizontalScrollFrameLayout;
+import com.example.diyview.divview.HorizontalScrollFrameLayout;
 
 
 public class HorizontalScrollFrameLayoutActivity extends AppCompatActivity{
