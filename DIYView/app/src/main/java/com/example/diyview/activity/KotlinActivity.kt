@@ -5,6 +5,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.diyview.R
+import java.sql.DriverManager.println
 
 class KotlinActivity : AppCompatActivity() {
 
@@ -52,28 +53,70 @@ class KotlinActivity : AppCompatActivity() {
     }
 
     //空值与 null 检测
-    fun f():String {
+    fun f(): String {
         val maybe12 = maybenull("12")
         val maybe13 = maybenull("13")
-        if (maybe12==null) return ""
-        if (maybe13==null) return ""
-        return maybe12+maybe13
+        if (maybe12 == null) return ""
+        if (maybe13 == null) return ""
+        return maybe12 + maybe13
     }
+
     fun maybenull(something: String): String? {
         return something
     }
+
     //类型检测与自动类型转换
+    fun typeCheck(a: Any): Int? {
+        if (a is String) {
+            return a.length
+        }
+
+        return null
+    }
 
     //for 循环
+    fun forech() {
+        val map = mapOf("a" to 1, "b" to 2, "c" to 3)//mapOf创建只读 map
+        println(map["a"])    // 1
+
+        var items = listOf("apple", "banana", "kiwifruit")//listOf创建只读 list
+        for (item in items) {
+            println(item)
+        }
+    }
 
     //while 循环
+    fun whiletest(a: Int) {
+        var index: Int = 0
+        while (index < a) {
+            println("this is position $index")
+            index++
+        }
+    }
 
-    //when 表达式
+    //when 表达式    when 将它的参数与所有的分支条件顺序比较，直到某个分支满足条件
+    fun whentest(a: Int) {
+        when (a) {
+            1 -> println("$a")
+            2 -> Toast.makeText(this, "$a", Toast.LENGTH_LONG).show()
+            else -> {
+                println("a is neither 1 nor 2")
+            }
+        }
+    }
 
     //使用区间（range）
+    fun rangetest(b: Int): Boolean? {
+        var c: Int = 20
+        if (b in 1..c + 100) {
+            return true
+        }
+        return null
+    }
 
     //集合
-
+    fun listTest() {
+    }
     //创建基本类及其实例
 
     //

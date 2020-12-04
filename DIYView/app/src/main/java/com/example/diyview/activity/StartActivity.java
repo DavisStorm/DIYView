@@ -15,9 +15,11 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.diyview.R;
 
+import java.util.List;
+
 public class StartActivity extends AppCompatActivity {
 
-    private String[] mDirectory = new String[]{"自定义View","Kotlin"};
+    private String[] mDirectory = new String[]{"自定义View", "Kotlin"};
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -29,7 +31,7 @@ public class StartActivity extends AppCompatActivity {
         recyclerView.setAdapter(new Adapter());
     }
 
-    public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder>{
+    public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
         @NonNull
         @Override
@@ -41,17 +43,17 @@ public class StartActivity extends AppCompatActivity {
         @Override
         public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
             holder.tv.setText(mDirectory[position]);
-            holder.tv.setOnClickListener(v-> gotoPage(position));
+            holder.tv.setOnClickListener(v -> gotoPage(position));
         }
 
         private void gotoPage(int position) {
             Intent intent = new Intent();
-            switch (position){
+            switch (position) {
                 case 0:
-                    intent.setClass(StartActivity.this,FirstActivity.class);
+                    intent.setClass(StartActivity.this, FirstActivity.class);
                     break;
                 case 1:
-                    intent.setClass(StartActivity.this,KotlinActivity.class);
+                    intent.setClass(StartActivity.this, KotlinActivity.class);
                     break;
             }
             startActivity(intent);
@@ -64,9 +66,10 @@ public class StartActivity extends AppCompatActivity {
 
         public class MyViewHolder extends RecyclerView.ViewHolder {
             TextView tv;
+
             public MyViewHolder(@NonNull View itemView) {
                 super(itemView);
-                 tv =itemView.findViewById(R.id.tv);
+                tv = itemView.findViewById(R.id.tv);
             }
         }
     }
