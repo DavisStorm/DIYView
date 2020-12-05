@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp">
+
+    <TextView
+        android:id="@+id/tvFour"
+        style="@style/TextViewStyle.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="4.4新特性"/>
+    <TextView
+        android:id="@+id/tvFive"
+        style="@style/TextViewStyle.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5.0新特性"/>
+    <TextView
+        android:id="@+id/tvSix"
+        style="@style/TextViewStyle.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="6.0新特性"/>
+    <TextView
+        android:id="@+id/tvSeven"
+        style="@style/TextViewStyle.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="7.0新特性"/>
+    <TextView
+        android:id="@+id/tvEight"
+        style="@style/TextViewStyle.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="8.0新特性"/>
+    <TextView
+        android:id="@+id/tvNine"
+        style="@style/TextViewStyle.Normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="9.0新特性"/>
+</LinearLayout>

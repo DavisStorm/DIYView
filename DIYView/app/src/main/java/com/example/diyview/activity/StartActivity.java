@@ -7,19 +7,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.diyview.R;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.diyview.R;
-
-import java.util.List;
-
 public class StartActivity extends AppCompatActivity {
 
-    private String[] mDirectory = new String[]{"自定义View", "Kotlin"};
+    private String[] mDirectory = new String[]{"自定义View", "Kotlin","版本新特性"};
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -54,6 +52,9 @@ public class StartActivity extends AppCompatActivity {
                     break;
                 case 1:
                     intent.setClass(StartActivity.this, KotlinActivity.class);
+                    break;
+                case 2:
+                    intent.setClass(StartActivity.this, NewFeatureActivity.class);
                     break;
             }
             startActivity(intent);

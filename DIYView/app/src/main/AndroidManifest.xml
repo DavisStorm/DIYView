@@ -12,6 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activity.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".activity.UniverseStarsViewActivity" />
         <activity android:name=".activity.ViewPagerActivity" />
         <activity android:name=".activity.CircleDotProgressBarActivity" />
@@ -20,13 +27,7 @@
         <activity android:name=".activity.MeasureViewActivity" />
         <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.DragFooterViewActivity" />
-        <activity android:name=".activity.FirstActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".activity.FirstActivity"/>
         <activity android:name=".activity.LightingActivity" />
         <activity android:name=".activity.ScrollVActivity" />
         <activity android:name=".activity.SmoothPagingViewActivity" />
@@ -55,8 +56,12 @@
         <activity android:name=".activity.SlidingViewActivity" />
         <activity android:name=".divview.dragimageview.ViewDragImageActivity" />
         <activity android:name=".activity.SlidingPanelLayoutActivity" />
-        <activity android:name=".activity.StartActivity" />
         <activity android:name=".activity.KotlinActivity" />
+        <activity android:name=".activity.NewFeatureActivity" />
+        <activity android:name=".activity.FeatureFourActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
     </application>
 
 </manifest>

@@ -91,4 +91,8 @@
     <style name="Crop.ActionButtonText.Cancel">
         <item name="android:text">@string/crop__cancel</item>
     </style>
+    <style name="TextViewStyle.Normal">
+        <item name="android:textColor">@color/txt_black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
 </resources>
