@@ -42,6 +42,7 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
         findViewById(R.id.tv_SlidingView).setOnClickListener(this);
         findViewById(R.id.tv_ViewDragImage).setOnClickListener(this);
         findViewById(R.id.tv_SlidingPanelLayout).setOnClickListener(this);
+        findViewById(R.id.tv_SearchFilter).setOnClickListener(this);
     }
 
     @Override
@@ -113,6 +114,9 @@ public class FirstActivity extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.tv_SlidingPanelLayout:
                 intent.setClass(this, SlidingPanelLayoutActivity.class);
+                break;
+            case R.id.tv_SearchFilter:
+                intent.setClass(this, SearchFilterActivity.class);
                 break;
             case R.id.tv_Others:
                 intent.setClass(this,OtherActivity.class);
