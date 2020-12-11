@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.diyview.R;
@@ -42,6 +43,7 @@ public class SearchFilterActivity extends AppCompatActivity {
         mFilter.setNoSelectedItemText("nothing");
         mFilter.build();
         content_rv = findViewById(R.id.content_rv);
+        content_rv.setLayoutManager(new LinearLayoutManager(this));
         content_rv.setAdapter(new RVAdapter(newNewsList()));
     }
 
@@ -99,7 +101,7 @@ public class SearchFilterActivity extends AppCompatActivity {
 
         @Override
         protected void convert(BaseViewHolder helper, News item) {
-            helper.setText()
+//            helper.setText()
         }
     }
 
