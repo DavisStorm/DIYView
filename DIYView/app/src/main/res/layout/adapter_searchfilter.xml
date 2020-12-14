@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:padding="20dp">
     <com.example.diyview.divview.RoundRecImageView
         android:id="@+id/img_icon"
@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:text="David"
         android:paddingLeft="10dp"
+        android:paddingTop="5dp"
         app:layout_constraintLeft_toRightOf="@id/img_icon"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -29,6 +30,7 @@
         android:layout_height="wrap_content"
         android:text="Msg"
         android:paddingLeft="10dp"
+        android:paddingBottom="5dp"
         app:layout_constraintLeft_toRightOf="@id/img_icon"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/img_icon"/>
@@ -37,5 +39,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/tv_msg"
         android:padding="20dp"
+        android:background="@color/lightblue2"
         android:text="asdasdasdasd"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

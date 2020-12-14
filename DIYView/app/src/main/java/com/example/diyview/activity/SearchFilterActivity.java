@@ -27,7 +27,7 @@ import java.util.List;
 
 public class SearchFilterActivity extends AppCompatActivity {
     private Filter mFilter;
-    private int[] mColors = new int[]{Color.RED, Color.BLUE, Color.YELLOW};
+    private int[] mColors = new int[]{Color.GRAY,Color.RED, Color.BLUE, Color.YELLOW};
     private RecyclerView content_rv;
 
     @Override
@@ -36,7 +36,7 @@ public class SearchFilterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_searchfilter);
 
         mFilter = findViewById(R.id.filter);
-        mFilter.setAdapter(new Adapter(newAList()));
+        mFilter.setAdapter(new FilterModelAdapter(newAList()));
         mFilter.setListener(mListener);
 
         //the text to show when there's no selected items
@@ -54,26 +54,34 @@ public class SearchFilterActivity extends AppCompatActivity {
         news.add(new News("Smith","",20,2,"For the sample app I created Tag model to represent the category of a question in the conversation"));
         news.add(new News("Jack","",20,2,"To receive all the events from the Filter such as selection or deselection of a filter item it’s necessary to add a FilterListener with the same model class passed as a generic"));
         news.add(new News("Woodz","",20,2,"For more usage examples please review sample app"));
+        news.add(new News("Woodz","",20,2,"For more usage examples please review sample app"));
+        news.add(new News("Woodz","",20,2,"For more usage examples please review sample app"));
         return news;
     }
 
     private List<? extends FilterModel> newAList() {
         List<FilterModel> mData = new ArrayList<>();
+        mData.add(new FilterModel() {
+            @Override
+            public String getText() {
+                return "all categories";
+            }
+        });
         for (int i = 0; i < 3; i++) {
             int finalI = i;
             mData.add(new FilterModel() {
                 @Override
                 public String getText() {
-                    return "position" + " " + finalI;
+                    return "position" + " " + (finalI+1);
                 }
             });
         }
         return mData;
     }
 
-    class Adapter extends FilterAdapter<FilterModel> {
+    class FilterModelAdapter extends FilterAdapter<FilterModel> {
 
-        Adapter(List<? extends FilterModel> items) {
+        FilterModelAdapter(List<? extends FilterModel> items) {
             super(items);
         }
 
@@ -81,8 +89,8 @@ public class SearchFilterActivity extends AppCompatActivity {
         public FilterItem createView(int position, FilterModel item) {
             FilterItem filterItem = new FilterItem(SearchFilterActivity.this);
 
-            filterItem.setStrokeColor(mColors[0]);
-            filterItem.setTextColor(mColors[0]);
+            filterItem.setStrokeColor(mColors[position]);
+            filterItem.setTextColor(mColors[position]);
             filterItem.setCheckedTextColor(ContextCompat.getColor(SearchFilterActivity.this, android.R.color.white));
             filterItem.setColor(ContextCompat.getColor(SearchFilterActivity.this, android.R.color.white));
             filterItem.setCheckedColor(mColors[position]);
