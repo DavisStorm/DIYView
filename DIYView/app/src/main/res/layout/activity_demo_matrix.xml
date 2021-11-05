@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content"
+                android:text="1111111111111111111111111111"/>
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="-16dp"
+                android:src="@mipmap/ic_launcher"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ceshi"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ceshi"
+            android:gravity="center"/>
+    </LinearLayout>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_controler"
         android:layout_width="match_parent"
@@ -22,4 +62,4 @@
         android:text="screen"
         android:gravity="center"/>
 
-</RelativeLayout>
+</LinearLayout>

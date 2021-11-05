@@ -1,10 +1,13 @@
 package com.example.diyview.activity;
 
+import android.animation.FloatEvaluator;
+import android.animation.ValueAnimator;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.example.diyview.R;
@@ -27,7 +30,25 @@ public class StartActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.rv_Content);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new Adapter());
+        setBackgroundAlphaWithAnim(0,1);
     }
+    //设置window背景动画
+    public void setBackgroundAlphaWithAnim(float alphaFrom,float alphaTo){
+        ValueAnimator alphaAnim=ValueAnimator.ofFloat(alphaFrom,alphaTo);
+        alphaAnim.addUpdateListener(new ValueAnimator.AnimatorUpdateListener(){
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation){
+                Float alpha=(Float)animation.getAnimatedValue();
+                WindowManager.LayoutParams lp=getWindow().getAttributes();
+                lp.alpha=alpha;
+                getWindow().setAttributes(lp);
+            }
+        });
+        alphaAnim.setDuration(1800);
+        alphaAnim.setEvaluator(new FloatEvaluator());
+        alphaAnim.start();
+    }
+
 
     public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
