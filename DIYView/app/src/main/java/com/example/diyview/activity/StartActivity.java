@@ -20,7 +20,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class StartActivity extends AppCompatActivity {
 
-    private String[] mDirectory = new String[]{"自定义View", "Kotlin","版本新特性"};
+    private String[] mDirectory = new String[]{"自定义View", "Kotlin","版本新特性","自定义注解"};
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -76,6 +76,9 @@ public class StartActivity extends AppCompatActivity {
                     break;
                 case 2:
                     intent.setClass(StartActivity.this, NewFeatureActivity.class);
+                    break;
+                case 3:
+                    intent.setClass(StartActivity.this, AnnotationActivity.class);
                     break;
             }
             startActivity(intent);

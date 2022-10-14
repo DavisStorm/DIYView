@@ -4,18 +4,31 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.View;
 
+import com.doyou.cv.utils.DensityUtil;
+import com.doyou.cv.utils.ToastUtils;
 import com.example.diyview.R;
 import com.example.diyview.divview.dragimageview.ViewDragImageActivity;
 
 public class FirstActivity extends AppCompatActivity implements View.OnClickListener {
-
+    String TAG = "FirstActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first);
         initView();
+        initData();
+    }
+
+    private void initData() {
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getWindow().getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        float dp = DensityUtil.px2dp(displayMetrics.widthPixels);
+        ToastUtils.showShortToast(this,"屏幕宽度："+dp+"dp");
+        Log.d(TAG, "屏幕宽度："+dp+"dp");
     }
 
     private void initView() {

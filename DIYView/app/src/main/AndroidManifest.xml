@@ -58,6 +58,7 @@
         <activity android:name=".activity.SlidingPanelLayoutActivity" />
         <activity android:name=".activity.KotlinActivity" />
         <activity android:name=".activity.NewFeatureActivity" />
+        <activity android:name=".activity.AnnotationActivity" />
         <activity android:name=".activity.FeatureFourActivity"
             android:theme="@style/AppTheme.NoActionBar">
 
